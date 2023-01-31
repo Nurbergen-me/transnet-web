@@ -15,12 +15,12 @@
     <div class="vertline" style="left: 38%"></div>
     <div class="vertline" style="left: 63%"></div>
     <div class="vertline" style="left: 88%"></div>
-    <header class="relative h-[755px] ">
+    <header class="relative pb-14 md:pb-0 h-auto md:h-[755px] ">
         <img src="dist/img/bg-main.png" class="absolute top-0 w-full h-full object-cover -z-10" alt="bg">
         <div class="container mx-auto">
             <div class="flex items-center justify-between py-6">
-                <img src="dist/img/logo.svg" class="w-28 md:w-40 lg:w-56" alt="logo">
-                <ul class="flex items-center gap-5 lg:gap-10 ml-8 lg:ml-16 mr-auto text-sm lg:text-base">
+                <img src="dist/img/logo.svg" class="w-32 md:w-40 lg:w-56" alt="logo">
+                <ul class="items-center gap-5 lg:gap-10 ml-8 lg:ml-16 mr-auto text-sm lg:text-base hidden md:flex">
                     <li>
                         <a href="#" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                             КОМПАНИЯ
@@ -53,11 +53,11 @@
                     <div class="w-4 h-0.5 rounded-sm bg-primary-white"></div>
                 </div>
             </div>
-            <h1 class="mt-28 mb-16 text-4xl lg:text-6xl xl:text-7xl text-center text-primary-white font-semibold leading-tight">
+            <h1 class="mt-14 md:mt-28 mb-16 text-3xl md:text-4xl lg:text-6xl xl:text-7xl text-center text-primary-white font-semibold leading-tight">
                 СИСТЕМА ПОДСЧЕТА ПАССАЖИРОВ И КОНТРОЛЯ ПАССАЖИРСКИХ ПЕРЕВОЗОК
             </h1>
-            <div class="flex items-center justify-between">
-                <div class="pl-4 xl:ml-[12%] text-xl border-l-4 border-secondary-blue text-secondary-gray">
+            <div class="flex flex-col-reverse gap-10 md:gap-0 md:flex-row items-center justify-between">
+                <div class="pl-4 xl:ml-[12%] text-base md:text-xl border-l-4 border-secondary-blue text-secondary-gray">
                     Разработано российскими <br> инженерами и программистами
                 </div>
                 <div class="accent-text">
@@ -66,15 +66,15 @@
             </div>
         </div>
     </header>
-    <section class="pt-9 pb-24">
+    <section class="pt-9 pb-9 md:pb-24">
         <div class="container flex items-center justify-center">
             <img src="dist/img/shape-icon.svg" class="shape top-0 right-0" alt="shape">
             <img src="dist/img/shape-icon.svg" class="shape top-auto bottom-0 right-0" alt="shape">
-            <div class="relative">
-                <img src="dist/img/static-bus.jpg" class="text-right mr-12" alt="static">
-                <div class="absolute w-[200px] h-[200px] rounded-full border-[20px] border-[#033457] -bottom-[67px] right-0 -z-10"></div>
+            <div class="absolute hidden md:block lg:relative right-2/3 h-[80%] w-[40%]">
+                <img src="dist/img/static-bus.jpg" class="text-right mr-12 h-full object-cover" alt="static">
+                <div class="absolute w-[200px] h-[200px] rounded-full border-[20px] border-[#033457] -bottom-[67px] -right-10 lg:right-0 -z-10"></div> 
             </div>
-            <div class="w-1/2 ml-12">
+            <div class="w-full md:w-[60%] lg:w-1/2 ml-auto lg:ml-12"> 
                 <h2 class="uppercase mb-5 max-w-lg">
                     СТАТИСТИК - ВАШЕ РЕШЕНИЕ
                 </h2>
@@ -136,7 +136,7 @@
                         К примеру, в автопарке перевозчика 50 транспортных средств, каждый ежедневно выходит на линию и перевозит в среднем 600 пассажиров в день. Средняя стоимость проезда в регионах России составляет 20 рублей.
                     </p>
                 </div>
-                <div class="relative min-w-[330px]">
+                <div class="hidden lg:block relative min-w-[330px]">
                     <img src="dist/img/money.png" alt="static">
                     <div class="absolute w-[242px] h-[242px] rounded-full bg-[#033457] -top-[55px] -right-[55px] -z-10"></div>
                 </div>
@@ -167,7 +167,7 @@
         <div class="container flex items-center gap-12">
             <img src="dist/img/shape-icon.svg" class="shape -top-8 -left-10" alt="shape">
             <img src="dist/img/shape-icon.svg" class="shape -bottom-10 left-[300px]" alt="shape">
-            <div class="w-1/2">
+            <div class="lg:w-1/2">
                 <h2 class="mb-2">
                     КАК УСТРОЕНА СИСТЕМА?
                 </h2>
@@ -179,15 +179,15 @@
                     Система поддерживает возможность установки автоинформаторов, светодиодных табло, а также дополнительных камер, осуществляющих видео съемку салона и дорожной ситуации.
                 </p>
             </div>
-            <div>
+            <div class="hidden lg:block">
                 <img src="dist/img/system.png" alt="system">
             </div>
         </div>
     </section>
     <section class="mt-12 mb-11 overflow-hidden">
-        <img class="absolute h-full left-2/3" src="dist/img/passenger.png" alt="transport">
+        <img class="absolute hidden md:block h-full left-[70%] lg:left-2/3" src="dist/img/passenger.png" alt="transport">
         <div class="container flex items-center gap-12">
-            <div class="font-semibold w-2/3">
+            <div class="font-semibold w-full md:w-[70%] lg:w-2/3">
                 <h2 class="mb-8">
                     ПОДСЧЕТ ПАССАЖИРОВ
                 </h2>
@@ -221,8 +221,8 @@
     <section class="pt-11 pb-9 overflow-hidden">
         <div class="container flex items-center gap-14">
             <img src="dist/img/shape-icon.svg" class="shape top-20 -right-10" alt="shape">
-            <img class="absolute h-full right-2/3" src="dist/img/transport.png" alt="transport">
-            <div class=" ml-auto w-2/3 pl-14">
+            <img class="absolute h-full hidden md:block right-[80%] lg:right-2/3" src="dist/img/transport.png" alt="transport">
+            <div class=" ml-auto w-full md:w-[80%] lg:w-2/3 md:pl-14">
                 <h2 class="mb-6">
                     КОНТРОЛЬ ПАССАЖИРСКИХ ПЕРЕВОЗОК
                 </h2>
@@ -247,7 +247,7 @@
         </div>
     </section>
     <section class="py-9">
-        <h2 class="text-center max-w-[800px] mx-auto mb-12">
+        <h2 class="text-center px-4 max-w-[800px] mx-auto mb-12">
             ВСЕ ДАННЫЕ ОНЛАЙН ВЫ ПОЛУЧАЕТЕ В ЛИЧНОМ КАБИНЕТЕ
         </h2>
         <div id="splide" class="splide mb-9">
@@ -263,50 +263,50 @@
             </div>
         </div>
         <div class="container">
-            <div class="grid gap-3 grid-cols-4 font-semibold mb-10">
-                <div class="p-3 pb-10 odd:bg-[#282B32] even:bg-[#202124]">
+            <div class="grid gap-3 grid-cols-2 md:grid-cols-4 font-semibold mb-10 text-sm lg:text-base">
+                <div class="p-3 pb-4 lg:pb-10 odd:bg-[#282B32] even:bg-[#202124]">
                     <img class="mb-2.5" src="dist/img/cabinet-icon-1.svg" alt="icon">
                     <div>
                         Доступ к личному кабинету с любого устройства
                     </div>
                 </div>
-                <div class="p-3 pb-10 odd:bg-[#282B32] even:bg-[#202124]">
+                <div class="p-3 pb-4 lg:pb-10 odd:bg-[#282B32] even:bg-[#202124]">
                     <img class="mb-2.5" src="dist/img/cabinet-icon-2.svg" alt="icon">
                     <div>
                         Полный контроль транспортных средств
                     </div>
                 </div>
-                <div class="p-3 pb-10 odd:bg-[#282B32] even:bg-[#202124]">
+                <div class="p-3 pb-4 lg:pb-10 even:bg-[#282B32] odd:bg-[#202124] md:odd:bg-[#282B32] md:even:bg-[#202124]">
                     <img class="mb-2.5" src="dist/img/cabinet-icon-3.svg" alt="icon">
                     <div>
                         Быстрый анализ эффективности перевозок
                     </div>
                 </div>
-                <div class="p-3 pb-10 odd:bg-[#282B32] even:bg-[#202124]">
+                <div class="p-3 pb-4 lg:pb-10 even:bg-[#282B32] odd:bg-[#202124] md:odd:bg-[#282B32] md:even:bg-[#202124]">
                     <img class="mb-2.5" src="dist/img/cabinet-icon-4.svg" alt="icon">
                     <div>
                         Скачивание историй передвижения транспортных средств
                     </div>
                 </div>
-                <div class="p-3 pb-10 even:bg-[#282B32] odd:bg-[#202124]">
+                <div class="p-3 pb-4 lg:pb-10 odd:bg-[#282B32] even:bg-[#202124] md:even:bg-[#282B32] md:odd:bg-[#202124]">
                     <img class="mb-2.5" src="dist/img/cabinet-icon-5.svg" alt="icon">
                     <div>
                         Мониторинг состояния бортовой системы
                     </div>
                 </div>
-                <div class="p-3 pb-10 even:bg-[#282B32] odd:bg-[#202124]">
+                <div class="p-3 pb-4 lg:pb-10 odd:bg-[#282B32] even:bg-[#202124] md:even:bg-[#282B32] md:odd:bg-[#202124]">
                     <img class="mb-2.5" src="dist/img/cabinet-icon-6.svg" alt="icon">
                     <div>
                         Выгрузка данных в 1С при необходимости
                     </div>
                 </div>
-                <div class="p-3 pb-10 even:bg-[#282B32] odd:bg-[#202124]">
+                <div class="p-3 pb-4 lg:pb-10  even:bg-[#282B32] odd:bg-[#202124] md:odd:bg-[#282B32] md:even:bg-[#202124]">
                     <img class="mb-2.5" src="dist/img/cabinet-icon-7.svg" alt="icon">
                     <div>
                         Доступ к архиву данных за последние 5 лет
                     </div>
                 </div>
-                <div class="p-3 pb-10 even:bg-[#282B32] odd:bg-[#202124]">
+                <div class="p-3 pb-4 lg:pb-10  even:bg-[#282B32] odd:bg-[#202124] md:odd:bg-[#282B32] md:even:bg-[#202124]">
                     <img class="mb-2.5" src="dist/img/cabinet-icon-8.svg" alt="icon">
                     <div>
                         Видео и звук с камер в режиме реального времени
@@ -328,7 +328,7 @@
                 Система в среднем окупается за три-пять месяцев!
             </p>
         </div>
-        <div class="grid gap-px grid-cols-4 mb-14">
+        <div class="grid gap-px grid-cols-2 md:grid-cols-4 mb-14 text-sm lg:text-base">
             <div class="bg-primary-white text-center">
                 <div class="grid place-content-center rounded bg-secondary-producttitle mt-5 mx-6 h-14">
                     Видеокамеры подсчета <br> пассажиров
@@ -366,7 +366,7 @@
             СВЯЗАТЬСЯ СЕЙЧАС
         </button>
     </section>
-    <section class="py-9">
+    <section class="pt-9 pb-12">
         <div class="container">
             <h2>
                 ПОЧЕМЫ НАС ВЫБИРАЮТ?
@@ -375,7 +375,7 @@
                 <div>
                     <div class="pt-7 pb-10 border-b border-secondary-burgerbg">
                         <div class="flex items-end gap-6 mb-4">
-                            <div class="!text-6xl accent-text">
+                            <div class="flex items-end gap-2 !text-6xl accent-text">
                                 01 <span class="text-4xl">/</span>
                             </div>
                             <h3>
@@ -388,7 +388,7 @@
                     </div>
                     <div class="pt-7 pb-10 border-b border-secondary-burgerbg">
                         <div class="flex items-end gap-6 mb-4">
-                            <div class="!text-6xl accent-text">
+                            <div class="flex items-end gap-2 !text-6xl accent-text">
                                 02 <span class="text-4xl">/</span>
                             </div>
                             <h3>
@@ -400,13 +400,13 @@
                         </p>
                     </div>
                 </div>
-                <img src="dist/img/about-1.png" alt="about">
+                <img class="hidden lg:block" src="dist/img/about-1.png" alt="about">
             </div>
             <div class="flex items-center gap-6">
                 <div class="mb-16">
                     <div class="pt-7 pb-10 border-b border-secondary-burgerbg">
                         <div class="flex items-end gap-6 mb-4">
-                            <div class="!text-6xl accent-text">
+                            <div class="flex items-end gap-2 !text-6xl accent-text">
                                 03 <span class="text-4xl">/</span>
                             </div>
                             <h3>
@@ -420,7 +420,7 @@
                     </div>
                     <div class="pt-7 pb-10 border-b border-secondary-burgerbg">
                         <div class="flex items-end gap-6 mb-4">
-                            <div class="!text-6xl accent-text">
+                            <div class="flex items-end gap-2 !text-6xl accent-text">
                                 04 <span class="text-4xl">/</span>
                             </div>
                             <h3>
@@ -432,14 +432,14 @@
                         </p>
                     </div>
                 </div>
-                <img src="dist/img/about-2.png" alt="about">
+                <img class="hidden lg:block" src="dist/img/about-2.png" alt="about">
             </div>
             <button class="main-btn left">
                 ПОДРОБНЕЕ О КОМПАНИИ
             </button>
         </div>
     </section>
-    <section class="pt-12 pb-20 bg-primary-white z-10">
+    <section class="pt-12 pb-10 bg-primary-white z-10">
         <div class="container">
             <div>
                 <h2 class="mb-0 text-[#333] text-center">
@@ -452,7 +452,7 @@
                             <li class="splide__slide">
                                 <div class="mx-3">
                                     <img class="relative w-full h-[370px] object-cover -z-10" src="dist/img/news-1.png" alt="news">
-                                    <div class="bg-primary-white -mt-20 ml-24 px-4 py-3">
+                                    <div class="bg-primary-white -mt-20 ml-5 md:ml-24 px-4 py-3">
                                         <div class="text-sm text-[#888] mb-2">
                                             UI Design  |   15 Dec 2022
                                         </div>
@@ -472,7 +472,7 @@
                             <li class="splide__slide">
                                 <div class="mx-3">
                                     <img class="relative w-full h-[370px] object-cover -z-10" src="dist/img/news-2.png" alt="news">
-                                    <div class="bg-primary-white -mt-20 ml-24 px-4 py-3">
+                                    <div class="bg-primary-white -mt-20 ml-5 md:ml-24 px-4 py-3">
                                         <div class="text-sm text-[#888] mb-2">
                                             UI Design  |   15 Dec 2022
                                         </div>
@@ -492,7 +492,7 @@
                             <li class="splide__slide">
                                 <div class="mx-3">
                                     <img class="relative w-full h-[370px] object-cover -z-10" src="dist/img/news-1.png" alt="news">
-                                    <div class="bg-primary-white -mt-20 ml-24 px-4 py-3">
+                                    <div class="bg-primary-white -mt-20 ml-5 md:ml-24 px-4 py-3">
                                         <div class="text-sm text-[#888] mb-2">
                                             UI Design  |   15 Dec 2022
                                         </div>
@@ -512,30 +512,65 @@
                         </ul>
                     </div>
                 </div>
-                <div class="flex items-center">
-                    <div class="flex gap-24">
-                        <div class="relative">
-                            <img class="min-w-[370px]" src="dist/img/review-1.png" alt="review">
-                            <div class="absolute w-full h-full -right-5 -bottom-5 border border-secondary-quoteline">
-                                <img class="absolute -right-5 -bottom-5" src="dist/img/quote-image.svg" alt="quote">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex items-center gap-1.5 mb-7">
-                                <img src="dist/img/quote.svg" alt="quote">
-                                <img src="dist/img/quote.svg" alt="quote">
-                            </div>
-                            <div class="text-[#333] italic text-2xl mb-10">
-                                В условиях сжатых сроков Вашей компанией созданы и внедрены в повседневную деятельность АО "ГЛОНАСС" программные продукты, отвечающие современным тенденциям в разработке автоматизированных систем и программного обеспечения.
-                            </div>
-                            <div>
-                                <div class="text-[28px] text-[#333] font-semibold">
-                                    Chester Feil
-                                </div>
-                                <div class="text-sm text-[#888]">
-                                    КЛИЕНТ
-                                </div>
-                            </div>
+                <div >
+                    <div id="splide-reviews" class="splide md:mb-9">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="flex flex-col lg:flex-row items-start gap-12 lg:gap-24 pb-10">
+                                        <div class="relative w-[80%] h-[300px] mx-auto lg:min-w-[370px] lg:h-[420px]">
+                                            <img class="w-full h-full object-cover" src="dist/img/review-1.png" alt="review">
+                                            <div class="absolute w-full h-full -right-5 -bottom-5 border border-secondary-quoteline">
+                                                <img class="absolute -right-5 -bottom-5" src="dist/img/quote-image.svg" alt="quote">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="flex items-center gap-1.5 mb-7">
+                                                <img src="dist/img/quote.svg" alt="quote">
+                                                <img src="dist/img/quote.svg" alt="quote">
+                                            </div>
+                                            <div class="text-[#333] italic text-lg md:text-2xl mb-10">
+                                                В условиях сжатых сроков Вашей компанией созданы и внедрены в повседневную деятельность АО "ГЛОНАСС" программные продукты, отвечающие современным тенденциям в разработке автоматизированных систем и программного обеспечения.
+                                            </div>
+                                            <div>
+                                                <div class="text-[28px] text-[#333] font-semibold">
+                                                    Chester Feil
+                                                </div>
+                                                <div class="text-sm text-[#888]">
+                                                    КЛИЕНТ
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="flex flex-col lg:flex-row items-start gap-12 lg:gap-24 pb-10">
+                                        <div class="relative w-[80%] h-[300px] mx-auto lg:min-w-[370px] lg:h-[420px]">
+                                            <img class="w-full h-full object-cover" src="dist/img/review-1.png" alt="review">
+                                            <div class="absolute w-full h-full -right-5 -bottom-5 border border-secondary-quoteline">
+                                                <img class="absolute -right-5 -bottom-5" src="dist/img/quote-image.svg" alt="quote">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="flex items-center gap-1.5 mb-7">
+                                                <img src="dist/img/quote.svg" alt="quote">
+                                                <img src="dist/img/quote.svg" alt="quote">
+                                            </div>
+                                            <div class="text-[#333] italic text-lg md:text-2xl mb-10">
+                                                В условиях сжатых сроков Вашей компанией созданы и внедрены в повседневную деятельность АО "ГЛОНАСС" программные продукты, отвечающие современным тенденциям в разработке автоматизированных систем и программного обеспечения.
+                                            </div>
+                                            <div>
+                                                <div class="text-[28px] text-[#333] font-semibold">
+                                                    Chester Feil
+                                                </div>
+                                                <div class="text-sm text-[#888]">
+                                                    КЛИЕНТ
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -553,7 +588,7 @@
                     <p class="mb-12">
                         Мы предлагаем полный комлекс работ
                     </p>
-                    <img src="dist/img/company-path.png" alt="company">
+                    <img src="dist/img/company-path.svg" alt="company"> 
                 </div>
                 <div class="relative">
                     <img src="dist/img/company.png" alt="company">
@@ -567,33 +602,41 @@
             <h2 class="mb-9 text-primary-white">
                 ЗАКАЗАТЬ СИСТЕМУ СТАТИСТИК СЕЙЧАС!
             </h2>
-            <form action="" class="grid gap-11 grid-cols-2">
-                <div>
-                    <input type="text" class="form-input" placeholder="Имя *">
-                    <input type="text" class="form-input" placeholder="Фамилия *">
-                    <input type="mail" class="form-input" placeholder="Эл. почта *">
-                    <input type="tel" class="form-input" placeholder="Телефон *">
-                    <div class="flex items-start gap-3">
-                        <input type="checkbox" class="w-6 h-6">
-                        <div class="font-semibold text-[#ccc] max-w-[470px]">
-                            Я прочитал и понял Заявление о защите данных и заявляю о своем согласии на использование моих персональных данных.
-                        </div>
+            <form action="">
+                <div class="grid md:gap-11 grid-cols-1 md:grid-cols-2">
+                    <div>
+                        <input type="text" class="form-input" placeholder="Имя *">
+                        <input type="text" class="form-input" placeholder="Фамилия *">
+                        <input type="mail" class="form-input" placeholder="Эл. почта *">
+                        <input type="tel" class="form-input" placeholder="Телефон *">
+                    </div>
+                    <div>
+                        <input type="text" class="form-input" placeholder="Компания *">
+                        <textarea class="form-input h-[268px] resize-none" placeholder="Тема запроса *"></textarea>
                     </div>
                 </div>
-                <div>
-                    <input type="text" class="form-input" placeholder="Компания *">
-                    <textarea class="form-input h-[268px] resize-none" placeholder="Тема запроса *"></textarea>
-                    <button type="submit" class="main-btn">
-                        ЗАКАЗАТЬ СТАТИСТИК СЕЙЧАС
-                    </button>
+                <div class="grid gap-11 grid-cols-1 md:grid-cols-2">
+                    <div>
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="w-6 h-6">
+                            <div class="font-semibold text-[#ccc] max-w-[470px]">
+                                Я прочитал и понял Заявление о защите данных и заявляю о своем согласии на использование моих персональных данных.
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit" class="main-btn">
+                            ЗАКАЗАТЬ СТАТИСТИК СЕЙЧАС
+                        </button>
+                    </div>
                 </div>
             </form>
         </div>
     </section>
     <footer class="pt-12 pb-8 bg-[#0C0C0C]">
         <div class="container">
-            <div class="flex items-start justify-between">
-                <div>
+            <div class="flex flex-wrap items-start justify-between">
+                <div class="w-full lg:w-auto mb-7">
                     <img class="mb-5" src="dist/img/logo.svg" alt="logo">
                     <div class="font-semibold text-[#ccc] max-w-[300px]">
                         СИСТЕМА ПОДСЧЕТА ПАССАЖИРОВ И КОНТРОЛЯ ПАССАЖИРСКИХ ПЕРЕВОЗОК
@@ -603,7 +646,7 @@
                     <h4 class="mb-2.5">
                         Навигация
                     </h4>
-                    <div class="grid grid-cols-2 max-w-[200px] gap-1.5">
+                    <div class="grid grid-cols-2 mb-10 max-w-[200px] gap-1.5">
                         <a class="text-primary-white w-24" href="#">
                             Новости
                         </a>
@@ -621,7 +664,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="w-[300px] pl-10">
+                <div class="w-[300px] md:pl-10">
                     <h4 class="mb-2.5">
                         Наши контакты
                     </h4>
@@ -653,17 +696,32 @@
                 perPage: 1,
                 focus: 'center',
                 autoplay: true,
-                fixedHeight: 470,
-                fixedWidth: '70%',
+                // fixedHeight: 470,
+                // fixedWidth: '70%',
                 interval: 8000,
                 flickMaxPages: 3,
-                // updateOnMove: true,
+                updateOnMove: true,
                 pagination: false,
                 throttle: 300,
             }).mount();
             new Splide('#splide-news', {
                 type: 'loop',
                 perPage: 2,
+                autoplay: true,
+                interval: 8000,
+                flickMaxPages: 3,
+                updateOnMove: true,
+                pagination: false,
+                throttle: 300,
+                breakpoints: {
+                    1025: {
+                        perPage: 1,
+                    }
+                }
+            }).mount();
+            new Splide('#splide-reviews', {
+                type: 'loop',
+                perPage: 1,
                 autoplay: true,
                 interval: 8000,
                 flickMaxPages: 3,

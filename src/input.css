@@ -48,7 +48,7 @@ p {
     font-weight: 500;
     font-size: 16px;
     line-height: 140%;
-    color: #AAAAAA;
+    color: #AAAAAA; 
 }
 
 section {
@@ -84,6 +84,7 @@ section {
     display: block;
     margin: 0 auto;
     padding: 17px 22px;
+    white-space: nowrap;
 }
 
 .main-btn.left {
@@ -117,6 +118,8 @@ section {
   .cabinet-img {
     display: block;
     width: 100%;
+    height: 370px;
+    object-fit: cover;
     transition: transform 400ms;
     transform-origin: center center;
     opacity: 0.5;
@@ -158,6 +161,20 @@ section {
     right: 0px;
   }
 
+  #splide-reviews .splide__arrow--prev {
+    right: auto;
+    top: auto;
+    bottom: 30px;
+    left: 470px;
+  }
+
+  #splide-reviews .splide__arrow--next {
+    right: auto;
+    top: auto;
+    bottom: 30px;
+    left: 530px;
+  }
+
 .form-input {
     width: 100%;
     background: #111111;
@@ -171,5 +188,35 @@ section {
 @media screen and (max-width: 1280px) {
     .accent-text {
         font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .accent-text {
+        font-size: 80px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    h3 {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .splide .splide__arrow {
+        display: none;
+    }
+    .accent-text {
+        font-size: 56px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    .main-btn {
+        font-size: 14px;
     }
 }
