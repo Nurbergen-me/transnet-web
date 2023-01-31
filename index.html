@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello</title>
+    <title>Статистик</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
@@ -15,10 +15,65 @@
     <div class="vertline" style="left: 38%"></div>
     <div class="vertline" style="left: 63%"></div>
     <div class="vertline" style="left: 88%"></div>
+    <div class="fixed hidden-menu" id="hidden-menu">
+        <div class="rounded-full bg-secondary-burgerbg w-11 h-11 flex items-center justify-center flex-col gap-[3px] cursor-pointer absolute top-6 right-[10%]" onclick="toggleMenu()">
+            <div class="w-4 h-0.5 rounded-sm bg-primary-white"></div>
+            <div class="w-4 h-0.5 rounded-sm bg-primary-white"></div>
+            <div class="w-4 h-0.5 rounded-sm bg-primary-white"></div>
+        </div>
+        <ul class="flex flex-col gap-5 text-2xl mb-10">
+            <li>
+                <a href="#company" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                    КОМПАНИЯ
+                </a>
+            </li>
+            <li>
+                <a href="partners.html" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                    ПАРТНЕРЫ
+                </a>
+            </li>
+            <li>
+                <a href="#news" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                    НОВОСТИ
+                </a>
+            </li>
+            <li>
+                <a href="#reviews" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                    ОТЗЫВЫ
+                </a>
+            </li>
+            <li>
+                <a href="#contacts" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                    КОНТАКТЫ
+                </a>
+            </li>
+        </ul>
+        <div class="w-[300px]">
+            <h4 class="mb-2.5">
+                Наши контакты
+            </h4>
+            <div>
+                <a href="tel:+74991120568" class="block mb-2.5">
+                    Телефон: +7 (499) 112-05-68
+                </a>
+                <a href="mailto:info@transnetiq.ru" class="block mb-5">
+                    Email: info@transnetiq.ru
+                </a>
+                <div class="flex gap-3.5">
+                    <a href="#">
+                        <img class="w-7 h-7 p-1.5 flex items-center justify-center bg-[#0077FF]" src="dist/img/vk-icon.svg" alt="vk">
+                    </a>
+                    <a href="#">
+                        <img class="w-7 h-7 p-1.5 flex items-center justify-center bg-[#27A6E5]" src="dist/img/telegram-icon.svg" alt="telegram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="bg-secondary-navbar fixed top-0 w-full z-20">
         <div class="container">
             <div class="flex items-center justify-between py-6">
-                <a href="#" class="cursor-pointer">
+                <a href="/" class="cursor-pointer">
                     <img src="dist/img/logo.svg" class="w-32 md:w-40 lg:w-56" alt="logo">
                 </a>
                 <ul class="items-center gap-5 lg:gap-10 mx-auto lg:ml-16 lg:mr-auto text-sm lg:text-base hidden md:flex">
@@ -48,7 +103,7 @@
                         </a>
                     </li>
                 </ul>
-                <div class="rounded-full bg-secondary-burgerbg w-11 h-11 flex items-center justify-center flex-col gap-[3px] cursor-pointer">
+                <div class="rounded-full bg-secondary-burgerbg w-11 h-11 flex items-center justify-center flex-col gap-[3px] cursor-pointer" onclick="toggleMenu()">
                     <div class="w-4 h-0.5 rounded-sm bg-primary-white"></div>
                     <div class="w-4 h-0.5 rounded-sm bg-primary-white"></div>
                     <div class="w-4 h-0.5 rounded-sm bg-primary-white"></div>
@@ -748,6 +803,15 @@
             }).mount();
         });
 
+        function toggleMenu(state) {
+            var element = document.getElementById("hidden-menu");
+
+            if (state === 'close') {
+                element.classList.remove("active");
+            } else {
+                element.classList.toggle("active");
+            }
+        }
 
 
     </script>

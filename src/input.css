@@ -186,6 +186,47 @@ section {
     outline: none;
 }
 
+.table {
+    width: 95%;
+}
+
+.table tr {
+    height: 60px;
+    border: 1px solid #363636;
+}
+
+.table td:first-child {
+    background: #282B32;
+    width: 40%;
+    padding-left: 15px;
+    border-right: 1px solid #363636;
+}
+
+.table td:last-child {
+    background: #202124;
+    width: 60%;
+    padding-left: 20px;
+}
+
+.hidden-menu {
+    background: rgba(24, 24, 24, 0.95);
+    position: fixed;
+    right: -100%;
+    width: 50%;
+    height: 100%;
+    padding-top: 20vh;
+    padding-left: 7%;
+    z-index: 30;
+    opacity: 0;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.hidden-menu.active {
+    right: 0;
+    opacity: 1;
+}
+
 @media screen and (max-width: 1280px) {
     .accent-text {
         font-size: 80px;
@@ -201,6 +242,17 @@ section {
     }
     h3 {
         font-size: 26px;
+    }
+
+    .table {
+        width: 100%;
+    }
+    .table tr {
+        height: 50px;
+        font-size: 14px;
+    }
+    .hidden-menu {
+        width: 75%;
     }
 }
 
@@ -219,5 +271,8 @@ section {
     }
     .main-btn {
         font-size: 14px;
+    }
+    .hidden-menu {
+        width: 100%;
     }
 }

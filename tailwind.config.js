@@ -9,6 +9,7 @@ module.exports = {
         white: '#fff'
       },
       secondary: {
+        hiddenmenu: 'rgba(24, 24, 24, 0.95)',
         burgerbg: 'rgba(255, 255, 255, 0.15)',
         producttitle: 'rgba(24, 24, 24, 0.67)',
         navbar: 'rgba(24, 24, 24, 0.6)',

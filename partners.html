@@ -15,10 +15,65 @@
     <div class="vertline" style="left: 38%"></div>
     <div class="vertline" style="left: 63%"></div>
     <div class="vertline" style="left: 88%"></div>
+    <div class="fixed hidden-menu" id="hidden-menu">
+        <div class="rounded-full bg-secondary-burgerbg w-11 h-11 flex items-center justify-center flex-col gap-[3px] cursor-pointer absolute top-6 right-[10%]" onclick="toggleMenu()">
+            <div class="w-4 h-0.5 rounded-sm bg-primary-white"></div>
+            <div class="w-4 h-0.5 rounded-sm bg-primary-white"></div>
+            <div class="w-4 h-0.5 rounded-sm bg-primary-white"></div>
+        </div>
+        <ul class="flex flex-col gap-5 text-2xl mb-10">
+            <li>
+                <a href="#company" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                    КОМПАНИЯ
+                </a>
+            </li>
+            <li>
+                <a href="partners.html" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                    ПАРТНЕРЫ
+                </a>
+            </li>
+            <li>
+                <a href="#news" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                    НОВОСТИ
+                </a>
+            </li>
+            <li>
+                <a href="#reviews" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                    ОТЗЫВЫ
+                </a>
+            </li>
+            <li>
+                <a href="#contacts" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                    КОНТАКТЫ
+                </a>
+            </li>
+        </ul>
+        <div class="w-[300px]">
+            <h4 class="mb-2.5">
+                Наши контакты
+            </h4>
+            <div>
+                <a href="tel:+74991120568" class="block mb-2.5">
+                    Телефон: +7 (499) 112-05-68
+                </a>
+                <a href="mailto:info@transnetiq.ru" class="block mb-5">
+                    Email: info@transnetiq.ru
+                </a>
+                <div class="flex gap-3.5">
+                    <a href="#">
+                        <img class="w-7 h-7 p-1.5 flex items-center justify-center bg-[#0077FF]" src="dist/img/vk-icon.svg" alt="vk">
+                    </a>
+                    <a href="#">
+                        <img class="w-7 h-7 p-1.5 flex items-center justify-center bg-[#27A6E5]" src="dist/img/telegram-icon.svg" alt="telegram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="bg-secondary-navbar fixed top-0 w-full z-20">
         <div class="container">
             <div class="flex items-center justify-between py-6">
-                <a href="index.html" class="cursor-pointer">
+                <a href="/" class="cursor-pointer">
                     <img src="dist/img/logo.svg" class="w-32 md:w-40 lg:w-56" alt="logo">
                 </a>
                 <ul class="items-center gap-5 lg:gap-10 mx-auto lg:ml-16 lg:mr-auto text-sm lg:text-base hidden md:flex">
@@ -28,7 +83,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#partners" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                        <a href="partners.html" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                             ПАРТНЕРЫ
                         </a>
                     </li>
@@ -48,7 +103,7 @@
                         </a>
                     </li>
                 </ul>
-                <div class="rounded-full bg-secondary-burgerbg w-11 h-11 flex items-center justify-center flex-col gap-[3px] cursor-pointer">
+                <div class="rounded-full bg-secondary-burgerbg w-11 h-11 flex items-center justify-center flex-col gap-[3px] cursor-pointer" onclick="toggleMenu()">
                     <div class="w-4 h-0.5 rounded-sm bg-primary-white"></div>
                     <div class="w-4 h-0.5 rounded-sm bg-primary-white"></div>
                     <div class="w-4 h-0.5 rounded-sm bg-primary-white"></div>
@@ -87,120 +142,62 @@
             <h2 class="mb-7">
                 Наши партёры
             </h2>
-            <div class="pb-11">
-                <div class="flex font-semibold border border-[#363636] border-solid">
-                    <div class="w-[40%] bg-[#282B32] py-5 px-4 border-r border-[#363636] border-solid">
-                        Волгоград
-                    </div>
-                    <div class="w-[60%] p-5 bg-[#202124]">
-                        ООО «Трейд Телематикс»
-                    </div>
-                </div>
-                <div class="flex font-semibold border border-[#363636] border-solid">
-                    <div class="w-[40%] bg-[#282B32] py-5 px-4 border-r border-[#363636] border-solid">
-                        Ессентуки
-                    </div>
-                    <div class="w-[60%] p-5 bg-[#202124]">
-                        ООО «Научно-технический центр Сигнал»
-                    </div>
-                </div>
-                <div class="flex font-semibold border border-[#363636] border-solid">
-                    <div class="w-[40%] bg-[#282B32] py-5 px-4 border-r border-[#363636] border-solid">
-                        Красноярск
-                    </div>
-                    <div class="w-[60%] p-5 bg-[#202124]">
-                        ООО «М2М-Телематика Сибирь»
-                    </div>
-                </div>
-                <div class="flex font-semibold border border-[#363636] border-solid">
-                    <div class="w-[40%] bg-[#282B32] py-5 px-4 border-r border-[#363636] border-solid">
-                        Оренбург
-                    </div>
-                    <div class="w-[60%] p-5 bg-[#202124]">
-                        ООО «Проект»
-                    </div>
-                </div>
-                <div class="flex font-semibold border border-[#363636] border-solid">
-                    <div class="w-[40%] bg-[#282B32] py-5 px-4 border-r border-[#363636] border-solid">
-                        Нижний Новгород
-                    </div>
-                    <div class="w-[60%] p-5 bg-[#202124]">
-                        ООО ГК «ТехноТрейд НН»
-                    </div>
-                </div>
-                <div class="flex font-semibold border border-[#363636] border-solid">
-                    <div class="w-[40%] bg-[#282B32] py-5 px-4 border-r border-[#363636] border-solid">
-                        Пермь
-                    </div>
-                    <div class="w-[60%] p-5 bg-[#202124]">
-                        ООО «ЭРА-ГЛОНАСС»
-                    </div>
-                </div>
-                <div class="flex font-semibold border border-[#363636] border-solid">
-                    <div class="w-[40%] bg-[#282B32] py-5 px-4 border-r border-[#363636] border-solid">
-                        Рязань
-                    </div>
-                    <div class="w-[60%] p-5 bg-[#202124]">
-                        ООО «Торговый эксперт»
-                    </div>
-                </div>
-                <div class="flex font-semibold border border-[#363636] border-solid">
-                    <div class="w-[40%] bg-[#282B32] py-5 px-4 border-r border-[#363636] border-solid">
-                        Санкт-Петербург
-                    </div>
-                    <div class="w-[60%] p-5 bg-[#202124]">
-                        ООО «ЭРА-ГЛОНАСС»
-                    </div>
-                </div>
-                <div class="flex font-semibold border border-[#363636] border-solid">
-                    <div class="w-[40%] bg-[#282B32] py-5 px-4 border-r border-[#363636] border-solid">
-                        Саратов
-                    </div>
-                    <div class="w-[60%] p-5 bg-[#202124]">
-                        ООО «ВЕКТОР»
-                    </div>
-                </div>
-                <div class="flex font-semibold border border-[#363636] border-solid">
-                    <div class="w-[40%] bg-[#282B32] py-5 px-4 border-r border-[#363636] border-solid">
-                        Севастополь
-                    </div>
-                    <div class="w-[60%] p-5 bg-[#202124]">
-                        Индивидуальный предприниматель Рябчий Д.С.
-                    </div>
-                </div>
-                <div class="flex font-semibold border border-[#363636] border-solid">
-                    <div class="w-[40%] bg-[#282B32] py-5 px-4 border-r border-[#363636] border-solid">
-                        Ставрополь
-                    </div>
-                    <div class="w-[60%] p-5 bg-[#202124]">
-                        ООО «Научно-технический центр Сигнал»
-                    </div>
-                </div>
-                <div class="flex font-semibold border border-[#363636] border-solid">
-                    <div class="w-[40%] bg-[#282B32] py-5 px-4 border-r border-[#363636] border-solid">
-                        Тамбов
-                    </div>
-                    <div class="w-[60%] p-5 bg-[#202124]">
-                        ООО «М2М-Телематика Тамбов»
-                    </div>
-                </div>
-                <div class="flex font-semibold border border-[#363636] border-solid">
-                    <div class="w-[40%] bg-[#282B32] py-5 px-4 border-r border-[#363636] border-solid">
-                        Уфа
-                    </div>
-                    <div class="w-[60%] p-5 bg-[#202124]">
-                        ООО «Геоинформационные системы»
-                    </div>
-                </div>
-                <div class="flex font-semibold border border-[#363636] border-solid">
-                    <div class="w-[40%] bg-[#282B32] py-5 px-4 border-r border-[#363636] border-solid">
-                        Екатеринбург
-                    </div>
-                    <div class="w-[60%] p-5 bg-[#202124]">
-                        ООО "ЭрКас"
-                    </div>
-                </div>
-            </div>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>Волгоград</td>
+                        <td>ООО «Трейд Телематикс»</td>
+                    </tr>
+                    <tr>
+                        <td>Ессентуки</td>
+                        <td>ООО «Научно-технический центр Сигнал»</td>
+                    </tr>
+                    <tr>
+                        <td>Красноярск</td>
+                        <td>ООО «М2М-Телематика Сибирь»</td>
+                    </tr>
+                    <tr>
+                        <td>Оренбург</td>
+                        <td>ООО «Проект»</td>
+                    </tr>
+                    <tr>
+                        <td>Нижний Новгород</td>
+                        <td>ООО ГК «ТехноТрейд НН»</td>
+                    </tr>
+                    <tr>
+                        <td>Пермь</td>
+                        <td>ООО «ЭРА-ГЛОНАСС»</td>
+                    </tr>
+                    <tr>
+                        <td>Рязань</td>
+                        <td>ООО «Торговый эксперт»</td>
+                    </tr>
+                    <tr>
+                        <td>Санкт-Петербург</td>
+                        <td>ООО «ЭРА-ГЛОНАСС»</td>
+                    </tr>
+                    <tr>
+                        <td>Саратов</td>
+                        <td>ООО «ВЕКТОР»</td>
+                    </tr>
+                    <tr>
+                        <td>Севастополь</td>
+                        <td>Индивидуальный предприниматель Рябчий Д.С.</td>
+                    </tr>
+                    <tr>
+                        <td>Ставрополь</td>
+                        <td> ООО «Научно-технический центр Сигнал»</td>
+                    </tr>
+                    <tr>
+                        <td>Тамбов</td>
+                        <td>ООО «М2М-Телематика Тамбов»</td>
+                    </tr>
+                    <tr>
+                        <td>Уфа</td>
+                        <td>ООО «Геоинформационные системы»</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </section>
     <div id="map" style="width: 100%; height: 455px"></div>
@@ -260,5 +257,16 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+        function toggleMenu(state) {
+            var element = document.getElementById("hidden-menu");
+
+            if (state === 'close') {
+                element.classList.remove("active");
+            } else {
+                element.classList.toggle("active");
+            }
+        }
+    </script>
 </body>
 </html>
