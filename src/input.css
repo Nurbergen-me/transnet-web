@@ -209,7 +209,8 @@ section {
 }
 
 .hidden-menu {
-    background: rgba(24, 24, 24, 0.98);
+    background: rgba(24, 24, 24, 0.95);
+    backdrop-filter: blur(8px);
     position: fixed;
     right: -100%;
     width: 50%;
