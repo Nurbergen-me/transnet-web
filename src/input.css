@@ -85,6 +85,7 @@ section {
     margin: 0 auto;
     padding: 17px 22px;
     white-space: nowrap;
+    width: fit-content;
 }
 
 .main-btn.left {
