@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="dist/splide.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"></link>
     <link href="dist/output.css" rel="stylesheet">
 </head>
 <body class="bg-[#181818]">
@@ -15,44 +15,50 @@
     <div class="vertline" style="left: 38%"></div>
     <div class="vertline" style="left: 63%"></div>
     <div class="vertline" style="left: 88%"></div>
-    <header class="relative pb-14 md:pb-0 h-auto md:h-[755px] ">
-        <img src="dist/img/bg-main.png" class="absolute top-0 w-full h-full object-cover -z-10" alt="bg">
-        <div class="container mx-auto">
+    <div class="bg-secondary-navbar fixed top-0 w-full z-20">
+        <div class="container">
             <div class="flex items-center justify-between py-6">
-                <img src="dist/img/logo.svg" class="w-32 md:w-40 lg:w-56" alt="logo">
-                <ul class="items-center gap-5 lg:gap-10 ml-8 lg:ml-16 mr-auto text-sm lg:text-base hidden md:flex">
+                <a href="#" class="cursor-pointer">
+                    <img src="dist/img/logo.svg" class="w-32 md:w-40 lg:w-56" alt="logo">
+                </a>
+                <ul class="items-center gap-5 lg:gap-10 mx-auto lg:ml-16 lg:mr-auto text-sm lg:text-base hidden md:flex">
                     <li>
-                        <a href="#" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                        <a href="#company" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                             КОМПАНИЯ
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                        <a href="partners.html" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                             ПАРТНЕРЫ
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                        <a href="#news" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                             НОВОСТИ
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                        <a href="#reviews" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                             ОТЗЫВЫ
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                        <a href="#contacts" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                             КОНТАКТЫ
                         </a>
                     </li>
                 </ul>
-                <div class="rounded-full bg-secondary-burgerbg w-11 h-11 flex items-center justify-center flex-col gap-[3px]">
+                <div class="rounded-full bg-secondary-burgerbg w-11 h-11 flex items-center justify-center flex-col gap-[3px] cursor-pointer">
                     <div class="w-4 h-0.5 rounded-sm bg-primary-white"></div>
                     <div class="w-4 h-0.5 rounded-sm bg-primary-white"></div>
                     <div class="w-4 h-0.5 rounded-sm bg-primary-white"></div>
                 </div>
             </div>
+        </div>
+    </div>
+    <header class="relative pt-24 pb-14 md:pb-0 h-auto md:h-[755px] ">
+        <img src="dist/img/bg-main.png" class="absolute top-0 w-full h-full object-cover -z-10" alt="bg">
+        <div class="container mx-auto">
             <h1 class="mt-14 md:mt-28 mb-16 text-3xl md:text-4xl lg:text-6xl xl:text-7xl text-center text-primary-white font-semibold leading-tight">
                 СИСТЕМА ПОДСЧЕТА ПАССАЖИРОВ И КОНТРОЛЯ ПАССАЖИРСКИХ ПЕРЕВОЗОК
             </h1>
@@ -66,11 +72,11 @@
             </div>
         </div>
     </header>
-    <section class="pt-9 pb-9 md:pb-24">
+    <section class="pt-9 pb-9 md:pb-24" id="company">
         <div class="container flex items-center justify-center">
             <img src="dist/img/shape-icon.svg" class="shape top-0 right-0" alt="shape">
             <img src="dist/img/shape-icon.svg" class="shape top-auto bottom-0 right-0" alt="shape">
-            <div class="absolute hidden md:block lg:relative right-2/3 h-[80%] w-[40%]">
+            <div class="absolute hidden md:block lg:relative md:right-2/3 lg:right-0 h-[80%] w-[40%]">
                 <img src="dist/img/static-bus.jpg" class="text-right mr-12 h-full object-cover" alt="static">
                 <div class="absolute w-[200px] h-[200px] rounded-full border-[20px] border-[#033457] -bottom-[67px] -right-10 lg:right-0 -z-10"></div> 
             </div>
@@ -439,7 +445,7 @@
             </button>
         </div>
     </section>
-    <section class="pt-12 pb-10 bg-primary-white z-10">
+    <section class="pt-12 pb-10 bg-primary-white z-10" id="news">
         <div class="container">
             <div>
                 <h2 class="mb-0 text-[#333] text-center">
@@ -512,7 +518,7 @@
                         </ul>
                     </div>
                 </div>
-                <div >
+                <div id="reviews">
                     <div id="splide-reviews" class="splide md:mb-9">
                         <div class="splide__track">
                             <ul class="splide__list">
@@ -597,7 +603,7 @@
             </div>
         </div>
     </section>
-    <section class="pt-14 pb-20">
+    <section class="pt-14 pb-20" id="contacts">
         <div class="container">
             <h2 class="mb-9 text-primary-white">
                 ЗАКАЗАТЬ СИСТЕМУ СТАТИСТИК СЕЙЧАС!
@@ -688,7 +694,7 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.6/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script>
         document.addEventListener( 'DOMContentLoaded', function () {
             new Splide('#splide', {
@@ -697,12 +703,17 @@
                 focus: 'center',
                 autoplay: true,
                 // fixedHeight: 470,
-                // fixedWidth: '70%',
+                fixedWidth: '70%',
                 interval: 8000,
                 flickMaxPages: 3,
                 updateOnMove: true,
                 pagination: false,
                 throttle: 300,
+                breakpoints: {
+                    1025: {
+                        fixedWidth: '100%',
+                    }
+                }
             }).mount();
             new Splide('#splide-news', {
                 type: 'loop',
