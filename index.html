@@ -17,9 +17,8 @@
     <div class="vertline" style="left: 88%"></div>
     <div class="fixed hidden-menu" id="hidden-menu">
         <div class="rounded-full bg-secondary-burgerbg w-11 h-11 flex items-center justify-center flex-col gap-[3px] cursor-pointer absolute top-6 right-[10%]" onclick="toggleMenu()">
-            <div class="w-4 h-0.5 rounded-sm bg-primary-white"></div>
-            <div class="w-4 h-0.5 rounded-sm bg-primary-white"></div>
-            <div class="w-4 h-0.5 rounded-sm bg-primary-white"></div>
+            <div class="absolute w-4 h-0.5 rounded-sm bg-primary-white rotate-45"></div>
+            <div class="absolute w-4 h-0.5 rounded-sm bg-primary-white -rotate-45"></div>
         </div>
         <ul class="flex flex-col gap-5 text-2xl mb-10">
             <li>
@@ -74,7 +73,7 @@
         <div class="container">
             <div class="flex items-center justify-between py-6">
                 <a href="/" class="cursor-pointer">
-                    <img src="dist/img/logo.svg" class="w-32 md:w-40 lg:w-56" alt="logo">
+                    <img src="dist/img/logo.svg" class="w-40 lg:w-56" alt="logo">
                 </a>
                 <ul class="items-center gap-5 lg:gap-10 mx-auto lg:ml-16 lg:mr-auto text-sm lg:text-base hidden md:flex">
                     <li>
@@ -391,7 +390,7 @@
         </div>
         <div class="grid gap-px grid-cols-2 md:grid-cols-4 mb-14 text-sm lg:text-base">
             <div class="bg-primary-white text-center">
-                <div class="grid place-content-center rounded bg-secondary-producttitle mt-5 mx-6 h-14">
+                <div class="grid place-content-center rounded bg-secondary-producttitle mt-5 mx-6 min-h-[56px] px-1">
                     Видеокамеры подсчета <br> пассажиров
                 </div>
                 <div class="h-[280px] flex items-center">
@@ -399,7 +398,7 @@
                 </div>
             </div>
             <div class="bg-primary-white text-center">
-                <div class="grid place-content-center rounded bg-secondary-producttitle mt-5 mx-6 h-14">
+                <div class="grid place-content-center rounded bg-secondary-producttitle mt-5 mx-6 min-h-[56px] px-1">
                     Бортовой компьютер
                 </div>
                 <div class="h-[280px] flex items-center">
@@ -407,7 +406,7 @@
                 </div>
             </div>
             <div class="bg-primary-white text-center">
-                <div class="grid place-content-center rounded bg-secondary-producttitle mt-5 mx-6 h-14">
+                <div class="grid place-content-center rounded bg-secondary-producttitle mt-5 mx-6 min-h-[56px] px-1">
                     Абонентский телематический <br> терминал ГЛОНАСС/GPS
                 </div>
                 <div class="h-[280px] flex items-center">
@@ -415,7 +414,7 @@
                 </div>
             </div>
             <div class="bg-primary-white text-center">
-                <div class="grid place-content-center rounded bg-secondary-producttitle mt-5 mx-6 h-14">
+                <div class="grid place-content-center rounded bg-secondary-producttitle mt-5 mx-6 min-h-[56px] px-1">
                     4-G модем
                 </div>
                 <div class="h-[280px] flex items-center">
@@ -641,7 +640,7 @@
     
     <section class="py-14">
         <div class="container"> 
-            <div class="flex items-center justify-between gap-10">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-10">
                 <div class="text-center">
                     <h2 class="">
                         СТАТИСТИК
@@ -651,9 +650,9 @@
                     </p>
                     <img src="dist/img/company-path.svg" alt="company"> 
                 </div>
-                <div class="relative">
-                    <img src="dist/img/company.png" alt="company">
-                    <div class="absolute w-[200px] h-[200px] rounded-full border-[20px] border-[#033457] -bottom-[67px] -right-[47px] -z-10"></div>
+                <div class="relative w-full h-60 sm:h-80 md:w-auto md:h-auto">
+                    <img class="w-full h-full object-cover" src="dist/img/company.png" alt="company">
+                    <div class="absolute hidden md:block w-[200px] h-[200px] rounded-full border-[20px] border-[#033457] -bottom-[67px] -right-[47px] -z-10"></div>
                 </div>
             </div>
         </div>
@@ -757,7 +756,7 @@
                 perPage: 1,
                 focus: 'center',
                 autoplay: true,
-                // fixedHeight: 470,
+                fixedHeight: 470,
                 fixedWidth: '70%',
                 interval: 8000,
                 flickMaxPages: 3,
@@ -767,6 +766,11 @@
                 breakpoints: {
                     1025: {
                         fixedWidth: '100%',
+                        fixedHeight: 370,
+                    },
+                    720: {
+                        fixedWidth: 400,
+                        fixedHeight: 200,
                     }
                 }
             }).mount();

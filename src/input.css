@@ -209,7 +209,7 @@ section {
 }
 
 .hidden-menu {
-    background: rgba(24, 24, 24, 0.95);
+    background: rgba(24, 24, 24, 0.98);
     position: fixed;
     right: -100%;
     width: 50%;
