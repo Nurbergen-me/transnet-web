@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Статистик</title>
+    <link rel="icon" href="dist/img/favicon.ico" sizes="any" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
@@ -17,32 +18,33 @@
     <div class="vertline" style="left: 88%"></div>
     <div class="fixed hidden-menu" id="hidden-menu">
         <div class="rounded-full bg-secondary-burgerbg w-11 h-11 flex items-center justify-center flex-col gap-[3px] cursor-pointer absolute top-6 right-[10%]" onclick="toggleMenu()">
-            <div class="absolute w-4 h-0.5 rounded-sm bg-primary-white rotate-45"></div>
-            <div class="absolute w-4 h-0.5 rounded-sm bg-primary-white -rotate-45"></div>
+            <div class="w-4 h-0.5 rounded-sm bg-primary-white"></div>
+            <div class="w-4 h-0.5 rounded-sm bg-primary-white"></div>
+            <div class="w-4 h-0.5 rounded-sm bg-primary-white"></div>
         </div>
         <ul class="flex flex-col gap-5 text-2xl mb-10">
             <li>
-                <a href="#company" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                <a href="index.html#company" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                     КОМПАНИЯ
                 </a>
             </li>
             <li>
-                <a href="partners.html" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                <a href="partners.html#partners" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                     ПАРТНЕРЫ
                 </a>
             </li>
             <li>
-                <a href="#news" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                <a href="index.html#news" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                     НОВОСТИ
                 </a>
             </li>
             <li>
-                <a href="#reviews" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                <a href="index.html#reviews" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                     ОТЗЫВЫ
                 </a>
             </li>
             <li>
-                <a href="#contacts" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                <a href="index.html#contacts" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                     КОНТАКТЫ
                 </a>
             </li>
@@ -69,35 +71,35 @@
             </div>
         </div>
     </div>
-    <div class="bg-secondary-navbar fixed top-0 w-full z-20 backdrop-blur">
+    <div class="bg-secondary-navbar fixed top-0 w-full z-20">
         <div class="container">
             <div class="flex items-center justify-between py-6">
-                <a href="/" class="cursor-pointer">
-                    <img src="dist/img/logo.svg" class="w-40 lg:w-56" alt="logo">
+                <a href="index.html" class="cursor-pointer">
+                    <img src="dist/img/logo.svg" class="w-32 md:w-40 lg:w-56" alt="logo">
                 </a>
                 <ul class="items-center gap-5 lg:gap-10 mx-auto lg:ml-16 lg:mr-auto text-sm lg:text-base hidden md:flex">
                     <li>
-                        <a href="#company" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                        <a href="index.html#company" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                             КОМПАНИЯ
                         </a>
                     </li>
                     <li>
-                        <a href="partners.html" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                        <a href="partners.html#partners" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                             ПАРТНЕРЫ
                         </a>
                     </li>
                     <li>
-                        <a href="#news" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                        <a href="index.html#news" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                             НОВОСТИ
                         </a>
                     </li>
                     <li>
-                        <a href="#reviews" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                        <a href="index.html#reviews" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                             ОТЗЫВЫ
                         </a>
                     </li>
                     <li>
-                        <a href="#contacts" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                        <a href="index.html#contacts" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                             КОНТАКТЫ
                         </a>
                     </li>
@@ -224,7 +226,7 @@
         </div>
     </section>
     <section class="py-14">
-        <div class="container flex items-center gap-12">
+        <div class="container flex flex-col md:flex-row items-center gap-5 md:gap-12">
             <img src="dist/img/shape-icon.svg" class="shape -top-8 -left-10" alt="shape">
             <img src="dist/img/shape-icon.svg" class="shape -bottom-10 left-[300px]" alt="shape">
             <div class="lg:w-1/2">
@@ -239,8 +241,15 @@
                     Система поддерживает возможность установки автоинформаторов, светодиодных табло, а также дополнительных камер, осуществляющих видео съемку салона и дорожной ситуации.
                 </p>
             </div>
-            <div class="hidden lg:block">
-                <img src="dist/img/system.png" alt="system">
+            <div class="relative max-w-lg lg:block lg:ml-20 min-h-[320px] min-w-[95%] sm:min-w-[380px]">
+                <img class="absolute top-0 left-0 -z-10 hidden lg:block" src="dist/img/video-shape.svg" alt="shape">
+                <div class="absolute hidden lg:block -bottom-10 left-[45%] w-[175px] h-[175px] rounded-full border-[20px] border-[#033457]"></div>
+                <div class="absolute left-0 bottom-0">
+                    <video width="340" height="380" controls autoplay>
+                        <source src="dist/img/bus.mp4" type="video/mp4">
+                      </video>
+                </div>
+                <img class="lg:pl-[85px] lg:pb-[85px] hidden lg:block" src="dist/img/system.png" alt="system">
             </div>
         </div>
     </section>
@@ -691,6 +700,39 @@
                     </div>
                 </div>
             </form>
+        </div>
+    </section>
+    <section class="pb-10 md:py-32">
+        <div class="hidden md:block map map-main absolute top-0 left-0 w-full">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2b2ba3902d27369d06c2a49b304b1d67e3281f030adf3c98cbfa8d0091a09fe9&amp;width=100%25&amp;height=530&amp;lang=ru_RU&amp;scroll=false"></script>
+        </div>
+        <div class="container pointer-events-none">
+            <div class="rounded-2xl py-5 pl-7 bg-[#2E2B2C] max-w-[520px] pointer-events-auto">
+                <h2 class="mb-6">
+                    Контакты
+                </h2>
+                <div class="contacts-line mb-5"></div>
+                <div class="font-semibold">
+                    <div class="flex items-center gap-3.5 mb-6">
+                        <img src="dist/img/location-icon.svg" alt="location">
+                        <div>
+                            МО, г. Королев, ул. Большая Комитетская, 28.
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3.5 mb-6">
+                        <img src="dist/img/message-icon.svg" alt="message">
+                        <div>
+                            info@transnetiq.ru
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3.5 mb-6">
+                        <img src="dist/img/phone-icon.svg" alt="phone">
+                        <div>
+                            +7 (499) 112-05-68
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <footer class="pt-12 pb-8 bg-[#0C0C0C]">

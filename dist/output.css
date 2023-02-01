@@ -673,6 +673,14 @@ video {
   left: 300px;
 }
 
+.left-0 {
+  left: 0px;
+}
+
+.left-\[45\%\] {
+  left: 45%;
+}
+
 .left-\[70\%\] {
   left: 70%;
 }
@@ -996,6 +1004,10 @@ video {
   height: 242px;
 }
 
+.h-\[175px\] {
+  height: 175px;
+}
+
 .h-\[280px\] {
   height: 280px;
 }
@@ -1018,6 +1030,10 @@ video {
 
 .h-6 {
   height: 1.5rem;
+}
+
+.min-h-\[320px\] {
+  min-height: 320px;
 }
 
 .min-h-\[56px\] {
@@ -1060,6 +1076,10 @@ video {
   width: 242px;
 }
 
+.w-\[175px\] {
+  width: 175px;
+}
+
 .w-4\/5 {
   width: 80%;
 }
@@ -1084,6 +1104,10 @@ video {
   min-width: 330px;
 }
 
+.min-w-\[95\%\] {
+  min-width: 95%;
+}
+
 .max-w-lg {
   max-width: 32rem;
 }
@@ -1098,6 +1122,10 @@ video {
 
 .max-w-\[470px\] {
   max-width: 470px;
+}
+
+.max-w-\[520px\] {
+  max-width: 520px;
 }
 
 .max-w-\[300px\] {
@@ -1963,6 +1991,10 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .rounded-t {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
@@ -2114,6 +2146,11 @@ video {
 
 .bg-secondary-producttitle {
   background-color: rgba(24, 24, 24, 0.67);
+}
+
+.bg-\[\#2E2B2C\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(46 43 44 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#0C0C0C\] {
@@ -2278,6 +2315,26 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pt-24 {
   padding-top: 6rem;
 }
@@ -2334,8 +2391,16 @@ video {
   padding-bottom: 5rem;
 }
 
+.pl-7 {
+  padding-left: 1.75rem;
+}
+
 .pb-8 {
   padding-bottom: 2rem;
+}
+
+.pb-11 {
+  padding-bottom: 2.75rem;
 }
 
 .text-left {
@@ -2989,7 +3054,7 @@ section {
 .cabinet-img {
   display: block;
   width: 100%;
-  height: 370px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   transition: transform 400ms;
@@ -3101,6 +3166,16 @@ section {
 .hidden-menu.active {
   right: 0;
   opacity: 1;
+}
+
+.contacts-line {
+  background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.15), rgba(255,255,255,0));
+  width: 100%;
+  height: 1px;
+}
+
+.map-main {
+  filter: invert(0.9) grayscale(1);
 }
 
 @media screen and (max-width: 1280px) {
@@ -3248,6 +3323,10 @@ section {
     height: 20rem;
   }
 
+  .sm\:min-w-\[380px\] {
+    min-width: 380px;
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
   }
@@ -3322,8 +3401,17 @@ section {
     gap: 0px;
   }
 
+  .md\:gap-12 {
+    gap: 3rem;
+  }
+
   .md\:gap-11 {
     gap: 2.75rem;
+  }
+
+  .md\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .md\:pb-0 {
@@ -3407,6 +3495,10 @@ section {
     margin-left: 3rem;
   }
 
+  .lg\:ml-20 {
+    margin-left: 5rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -3445,6 +3537,14 @@ section {
 
   .lg\:gap-24 {
     gap: 6rem;
+  }
+
+  .lg\:pl-\[85px\] {
+    padding-left: 85px;
+  }
+
+  .lg\:pb-\[85px\] {
+    padding-bottom: 85px;
   }
 
   .lg\:pb-10 {

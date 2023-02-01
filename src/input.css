@@ -119,7 +119,7 @@ section {
   .cabinet-img {
     display: block;
     width: 100%;
-    height: 370px;
+    height: 100%;
     object-fit: cover;
     transition: transform 400ms;
     transform-origin: center center;
@@ -226,6 +226,16 @@ section {
 .hidden-menu.active {
     right: 0;
     opacity: 1;
+}
+
+.contacts-line {
+    background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.15), rgba(255,255,255,0));
+    width: 100%;
+    height: 1px;
+}
+
+.map-main {
+    filter: invert(0.9) grayscale(1);
 }
 
 @media screen and (max-width: 1280px) {

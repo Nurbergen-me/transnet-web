@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Статистик</title>
+    <link rel="icon" href="dist/img/favicon.ico" sizes="any" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
@@ -23,27 +24,27 @@
         </div>
         <ul class="flex flex-col gap-5 text-2xl mb-10">
             <li>
-                <a href="#company" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                <a href="index.html#company" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                     КОМПАНИЯ
                 </a>
             </li>
             <li>
-                <a href="partners.html" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                <a href="partners.html#partners" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                     ПАРТНЕРЫ
                 </a>
             </li>
             <li>
-                <a href="#news" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                <a href="index.html#news" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                     НОВОСТИ
                 </a>
             </li>
             <li>
-                <a href="#reviews" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                <a href="index.html#reviews" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                     ОТЗЫВЫ
                 </a>
             </li>
             <li>
-                <a href="#contacts" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                <a href="index.html#contacts" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                     КОНТАКТЫ
                 </a>
             </li>
@@ -73,32 +74,32 @@
     <div class="bg-secondary-navbar fixed top-0 w-full z-20">
         <div class="container">
             <div class="flex items-center justify-between py-6">
-                <a href="/" class="cursor-pointer">
+                <a href="index.html" class="cursor-pointer">
                     <img src="dist/img/logo.svg" class="w-32 md:w-40 lg:w-56" alt="logo">
                 </a>
                 <ul class="items-center gap-5 lg:gap-10 mx-auto lg:ml-16 lg:mr-auto text-sm lg:text-base hidden md:flex">
                     <li>
-                        <a href="#company" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                        <a href="index.html#company" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                             КОМПАНИЯ
                         </a>
                     </li>
                     <li>
-                        <a href="partners.html" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                        <a href="partners.html#partners" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                             ПАРТНЕРЫ
                         </a>
                     </li>
                     <li>
-                        <a href="#news" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                        <a href="index.html#news" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                             НОВОСТИ
                         </a>
                     </li>
                     <li>
-                        <a href="#reviews" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                        <a href="index.html#reviews" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                             ОТЗЫВЫ
                         </a>
                     </li>
                     <li>
-                        <a href="#contacts" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                        <a href="index.html#contacts" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                             КОНТАКТЫ
                         </a>
                     </li>
@@ -127,7 +128,7 @@
             </div>
         </div>
     </header>
-    <section>
+    <section class="pb-11" id="partners">
         <div class="container">
             <h2 class="mb-5">
                 Региональные партнёры
@@ -200,7 +201,9 @@
             </table>
         </div>
     </section>
-    <div id="map" style="width: 100%; height: 455px"></div>
+    <div id="map" style="width: 100%; height: 455px">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af68d16cf6f859897e9c96df2db93d20a712d367756ff40855f1a1ca195bc3083&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=false"></script>
+    </div>
     <footer class="pt-12 pb-8 bg-[#0C0C0C]">
         <div class="container">
             <div class="flex flex-wrap items-start justify-between">
