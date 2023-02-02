@@ -1,18 +1,18 @@
 {
     "type": "FeatureCollection",
     "features": [
-        {"type":"Feature","id":0,"geometry":{"type":"Point","coordinates":[48.707067,44.516975]},"properties":{"balloonContentHeader":"Волгоград"}},
-        {"type":"Feature","id":1,"geometry":{"type":"Point","coordinates":[44.044526, 42.85891]},"properties":{"balloonContentHeader":"Ставропольский край, Ессентуки"}},
-        {"type":"Feature","id":2,"geometry":{"type":"Point","coordinates":[56.010569, 92.852572]},"properties":{"balloonContentHeader":"Красноярск"}},
-        {"type":"Feature","id":3,"geometry":{"type":"Point","coordinates":[51.768205, 55.096964]},"properties":{"balloonContentHeader":"Оренбург"}},
-        {"type":"Feature","id":4,"geometry":{"type":"Point","coordinates":[56.326797, 44.006516]},"properties":{"balloonContentHeader":"Нижний Новгород"}},
-        {"type":"Feature","id":5,"geometry":{"type":"Point","coordinates":[58.010455, 56.229443]},"properties":{"balloonContentHeader":"Пермь"}},
-        {"type":"Feature","id":6,"geometry":{"type":"Point","coordinates":[54.629565, 39.741917]},"properties":{"balloonContentHeader":"Рязань"}},
-        {"type":"Feature","id":7,"geometry":{"type":"Point","coordinates":[59.938955, 30.315644]},"properties":{"balloonContentHeader":"Санкт-Петербург"}},
-        {"type":"Feature","id":8,"geometry":{"type":"Point","coordinates":[51.533562, 46.034266]},"properties":{"balloonContentHeader":"Саратов"}},
-        {"type":"Feature","id":9,"geometry":{"type":"Point","coordinates":[44.556972, 33.526402]},"properties":{"balloonContentHeader":"Севастополь"}},
-        {"type":"Feature","id":10,"geometry":{"type":"Point","coordinates":[45.043317, 41.96911]},"properties":{"balloonContentHeader":"Ставрополь"}},
-        {"type":"Feature","id":11,"geometry":{"type":"Point","coordinates":[52.721295, 41.45275]},"properties":{"balloonContentHeader":"Тамбов"}},
-        {"type":"Feature","id":12,"geometry":{"type":"Point","coordinates":[54.735152, 55.958736]},"properties":{"balloonContentHeader":"Республика Башкортостан, Уфа"}}
+        {"type":"Feature","id":0,"geometry":{"type":"Point","coordinates":[48.707067,44.516975]},"properties":{"balloonContentHeader":"ООО «Трейд Телематикс»"}},
+        {"type":"Feature","id":1,"geometry":{"type":"Point","coordinates":[44.044526, 42.85891]},"properties":{"balloonContentHeader":"ООО «Научно-технический центр Сигнал»"}},
+        {"type":"Feature","id":2,"geometry":{"type":"Point","coordinates":[56.010569, 92.852572]},"properties":{"balloonContentHeader":"ООО «М2М-Телематика Сибирь»"}},
+        {"type":"Feature","id":3,"geometry":{"type":"Point","coordinates":[51.768205, 55.096964]},"properties":{"balloonContentHeader":"ООО «Проект»"}},
+        {"type":"Feature","id":4,"geometry":{"type":"Point","coordinates":[56.326797, 44.006516]},"properties":{"balloonContentHeader":"ООО ГК «ТехноТрейд НН»"}},
+        {"type":"Feature","id":5,"geometry":{"type":"Point","coordinates":[58.010455, 56.229443]},"properties":{"balloonContentHeader":"ООО «ЭРА-ГЛОНАСС»"}},
+        {"type":"Feature","id":6,"geometry":{"type":"Point","coordinates":[54.629565, 39.741917]},"properties":{"balloonContentHeader":"ООО «Торговый эксперт»"}},
+        {"type":"Feature","id":7,"geometry":{"type":"Point","coordinates":[59.938955, 30.315644]},"properties":{"balloonContentHeader":"ООО «ЭРА-ГЛОНАСС»"}},
+        {"type":"Feature","id":8,"geometry":{"type":"Point","coordinates":[51.533562, 46.034266]},"properties":{"balloonContentHeader":"ООО «ВЕКТОР»"}},
+        {"type":"Feature","id":9,"geometry":{"type":"Point","coordinates":[44.556972, 33.526402]},"properties":{"balloonContentHeader":"Индивидуальный предприниматель Рябчий Д.С."}},
+        {"type":"Feature","id":10,"geometry":{"type":"Point","coordinates":[45.043317, 41.96911]},"properties":{"balloonContentHeader":"ООО «Научно-технический центр Сигнал»"}},
+        {"type":"Feature","id":11,"geometry":{"type":"Point","coordinates":[52.721295, 41.45275]},"properties":{"balloonContentHeader":"ООО «Научно-технический центр Сигнал»"}},
+        {"type":"Feature","id":12,"geometry":{"type":"Point","coordinates":[54.735152, 55.958736]},"properties":{"balloonContentHeader":"ООО «Геоинформационные системы»"}}
     ]
 }
