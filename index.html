@@ -242,11 +242,16 @@
             </div>
             <div class="relative max-w-lg lg:block lg:ml-20 min-h-[320px] min-w-[95%] sm:min-w-[380px]">
                 <img class="absolute top-0 left-0 -z-10 hidden lg:block" src="dist/img/video-shape.svg" alt="shape">
-                <div class="absolute hidden lg:block -bottom-10 left-[45%] w-[175px] h-[175px] rounded-full border-[20px] border-[#033457]"></div>
-                <div class="absolute left-0 bottom-0">
-                    <video controls autoplay>
+                <div class="absolute hidden lg:block -bottom-10 left-[50%] -z-10 w-[175px] h-[175px] rounded-full border-[20px] border-[#033457]"></div>
+                <div class="absolute flex items-center justify-center left-0 bottom-0 border-[6px] border-b-0 border-[#181818]">
+                    <video id="video">
                         <source src="dist/img/bus.mp4" type="video/mp4">
-                      </video>
+                    </video>
+                    <div id="play_wrap" class="absolute flex items-center justify-center w-full h-full cursor-pointer">
+                        <div class="absolute flex items-center justify-center w-20 h-20 rounded-full bg-primary-blue" id="play_button">
+                            <img src="/dist/img/play.svg" alt="play">
+                        </div>
+                    </div>
                 </div>
                 <img class="lg:pl-[85px] lg:pb-[85px] hidden lg:block" src="dist/img/system.png" alt="system">
             </div>
@@ -857,6 +862,19 @@
                 element.classList.toggle("active");
             }
         }
+
+        var playButton = document.getElementById("play_button");
+        var playWrap = document.getElementById("play_wrap");
+        var video = document.getElementById("video");
+        playWrap.addEventListener("click", function() {
+            if (video.paused == true) {
+                video.play();
+                playButton.classList.add("hidden");
+            } else {
+                video.pause();
+                playButton.classList.remove("hidden");
+            }
+        });
 
 
     </script>
