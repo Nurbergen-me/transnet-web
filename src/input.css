@@ -272,18 +272,22 @@ section {
         display: none;
     }
     .accent-text {
-        font-size: 56px;
+        font-size: 48px;
     }
     h2 {
-        font-size: 32px;
+        font-size: 26px;
     }
     h3 {
-        font-size: 24px;
+        font-size: 20px;
     }
     .main-btn {
         font-size: 14px;
     }
     .hidden-menu {
         width: 100%;
+    }
+    .form-input {
+        padding: 18px 20px;
+        font-size: 14px;
     }
 }
