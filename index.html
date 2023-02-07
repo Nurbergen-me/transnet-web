@@ -21,9 +21,9 @@
             <div class="absolute w-4 h-0.5 rounded-sm bg-primary-white rotate-45"></div>
             <div class="absolute w-4 h-0.5 rounded-sm bg-primary-white -rotate-45"></div>
         </div>
-        <ul class="flex flex-col gap-5 text-2xl mb-10">
+        <ul class="flex flex-col gap-5 text-2xl mb-10" onclick="toggleMenu('close')">
             <li>
-                <a href="index.html#company" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                <a href="index.html#why-us" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                     КОМПАНИЯ
                 </a>
             </li>
@@ -73,12 +73,12 @@
     <div class="bg-secondary-navbar fixed top-0 w-full z-20 backdrop-blur">
         <div class="container">
             <div class="flex items-center justify-between py-6">
-                <a href="index.html" class="cursor-pointer">
+                <a href="index.html#home" class="cursor-pointer">
                     <img src="dist/img/logo.svg" class="w-44 lg:w-56" alt="logo">
                 </a>
                 <ul class="items-center gap-5 lg:gap-10 mx-auto lg:ml-16 lg:mr-auto text-sm lg:text-base hidden md:flex">
                     <li>
-                        <a href="index.html#company" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                        <a href="index.html#why-us" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                             КОМПАНИЯ
                         </a>
                     </li>
@@ -111,7 +111,7 @@
             </div>
         </div>
     </div>
-    <header class="relative pt-24 pb-14 md:pb-0 h-auto md:h-[755px] ">
+    <header class="relative pt-24 pb-14 md:pb-0 h-auto md:h-[755px]" id="home">
         <img src="dist/img/bg-main.png" class="absolute top-0 w-full h-full object-cover -z-10" alt="bg">
         <div class="container mx-auto">
             <h1 class="mt-14 md:mt-28 mb-16 text-3xl md:text-4xl lg:text-6xl xl:text-7xl text-center text-primary-white font-semibold leading-tight">
@@ -292,6 +292,7 @@
         </div>
     </section>
     <section class="pt-11 pb-9 overflow-hidden">
+        <div class="absolute h-full left-0 w-2 bg-[#181818] z-10"></div>
         <div class="container flex items-center gap-14">
             <img src="dist/img/shape-icon.svg" class="shape top-20 -right-10" alt="shape">
             <img class="absolute h-full hidden md:block right-[80%] lg:right-2/3" src="dist/img/transport.png" alt="transport">
@@ -439,7 +440,7 @@
             СВЯЗАТЬСЯ СЕЙЧАС
         </a>
     </section>
-    <section class="pt-9 pb-12">
+    <section class="pt-9 pb-12" id="why-us">
         <div class="container">
             <h2>
                 ПОЧЕМЫ НАС ВЫБИРАЮТ?
@@ -697,7 +698,7 @@
             </div>
         </div>
     </section>
-    <section class="pt-14 pb-20" id="contacts">
+    <section class="pt-14 pb-20">
         <div class="container">
             <h2 class="mb-9 text-primary-white">
                 ЗАКАЗАТЬ СИСТЕМУ СТАТИСТИК СЕЙЧАС!
@@ -733,7 +734,7 @@
             </form>
         </div>
     </section>
-    <section class="pb-10 md:py-32">
+    <section class="pb-10 md:py-32" id="contacts">
         <div class="hidden md:block map map-main absolute top-0 left-0 w-full">
             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2b2ba3902d27369d06c2a49b304b1d67e3281f030adf3c98cbfa8d0091a09fe9&amp;width=100%25&amp;height=530&amp;lang=ru_RU&amp;scroll=false"></script>
         </div>
@@ -780,19 +781,19 @@
                         Навигация
                     </h4>
                     <div class="grid grid-cols-2 mb-10 max-w-[200px] gap-1.5">
-                        <a class="text-primary-white w-24" href="#">
+                        <a class="text-primary-white w-24" href="index.html#news">
                             Новости
                         </a>
-                        <a class="text-primary-white w-24" href="#">
+                        <a class="text-primary-white w-24" href="index.html#why-us">
                             Компания
                         </a>
-                        <a class="text-primary-white w-24" href="#">
+                        <a class="text-primary-white w-24" href="index.html#reviews">
                             Отзывы
                         </a>
-                        <a class="text-primary-white w-24" href="#">
+                        <a class="text-primary-white w-24" href="partners.html#partners">
                             Партнёры
                         </a>
-                        <a class="text-primary-white w-24" href="#">
+                        <a class="text-primary-white w-24" href="index.html#contacts">
                             Контакты
                         </a>
                     </div>
@@ -822,88 +823,6 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <script>
-        document.addEventListener( 'DOMContentLoaded', function () {
-            new Splide('#splide', {
-                type: 'loop',
-                perPage: 1,
-                focus: 'center',
-                autoplay: true,
-                fixedHeight: 470,
-                fixedWidth: '70%',
-                interval: 8000,
-                flickMaxPages: 3,
-                updateOnMove: true,
-                pagination: false,
-                throttle: 300,
-                breakpoints: {
-                    1025: {
-                        fixedWidth: '100%',
-                        fixedHeight: 370,
-                    },
-                    720: {
-                        fixedWidth: 400,
-                        fixedHeight: 200,
-                    }
-                }
-            }).mount();
-            new Splide('#splide-news', {
-                type: 'loop',
-                perPage: 2,
-                autoplay: true,
-                interval: 8000,
-                flickMaxPages: 3,
-                updateOnMove: true,
-                pagination: false,
-                throttle: 300,
-                breakpoints: {
-                    1025: {
-                        perPage: 1,
-                    }
-                }
-            }).mount();
-            new Splide('#splide-reviews', {
-                type: 'loop',
-                perPage: 1,
-                autoplay: true,
-                interval: 8000,
-                flickMaxPages: 3,
-                // updateOnMove: true,
-                pagination: false,
-                throttle: 300,
-                // breakpoints: {
-                //     1440: {
-                //         perPage: 1,
-                //         padding: '30%'
-                //     }
-                // }
-            }).mount();
-        });
-
-        function toggleMenu(state) {
-            var element = document.getElementById("hidden-menu");
-
-            if (state === 'close') {
-                element.classList.remove("active");
-            } else {
-                element.classList.toggle("active");
-            }
-        }
-
-        var playButton = document.getElementById("play_button");
-        var playWrap = document.getElementById("play_wrap");
-        var video = document.getElementById("video");
-        playWrap.addEventListener("click", function() {
-            if (video.paused == true) {
-                video.play();
-                playButton.classList.add("hidden");
-            } else {
-                video.pause();
-                playButton.classList.remove("hidden");
-            }
-        });
-
-
-    </script>
+    <script src="dist/js/index.js"></script>
 </body>
 </html>

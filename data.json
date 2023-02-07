@@ -13,6 +13,7 @@
         {"type":"Feature","id":9,"geometry":{"type":"Point","coordinates":[44.556972, 33.526402]},"properties":{"balloonContentHeader":"Индивидуальный предприниматель Рябчий Д.С."}},
         {"type":"Feature","id":10,"geometry":{"type":"Point","coordinates":[45.043317, 41.96911]},"properties":{"balloonContentHeader":"ООО «Научно-технический центр Сигнал»"}},
         {"type":"Feature","id":11,"geometry":{"type":"Point","coordinates":[52.721295, 41.45275]},"properties":{"balloonContentHeader":"ООО «Научно-технический центр Сигнал»"}},
-        {"type":"Feature","id":12,"geometry":{"type":"Point","coordinates":[54.735152, 55.958736]},"properties":{"balloonContentHeader":"ООО «Геоинформационные системы»"}}
+        {"type":"Feature","id":12,"geometry":{"type":"Point","coordinates":[54.735152, 55.958736]},"properties":{"balloonContentHeader":"ООО «Геоинформационные системы»"}},
+        {"type":"Feature","id":13,"geometry":{"type":"Point","coordinates":[56.905819, 59.943267]},"properties":{"balloonContentHeader":"ООО «ЭрКас»"}}
     ]
 }

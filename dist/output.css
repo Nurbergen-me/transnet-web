@@ -1104,8 +1104,16 @@ video {
   width: 6rem;
 }
 
-.w-32 {
-  width: 8rem;
+.w-0\.5 {
+  width: 0.125rem;
+}
+
+.w-0 {
+  width: 0px;
+}
+
+.w-2 {
+  width: 0.5rem;
 }
 
 .min-w-\[330px\] {
@@ -2505,11 +2513,6 @@ video {
   line-height: 1 !important;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .text-\[28px\] {
   font-size: 28px;
 }
@@ -2949,6 +2952,11 @@ video {
   content: var(--tw-content);
 }
 
+html {
+  scroll-behavior: smooth;
+  --headerheight: 80px;
+}
+
 body {
   color: #CCC;
   position: relative;
@@ -3000,7 +3008,14 @@ p {
 
 section {
   position: relative;
-  overflow: hidden;
+  overflow: clip;
+  scroll-margin-top: 100px;
+  /* scroll-padding-top: -100px; */
+  /* scroll-margin-block-start: 100px; */
+}
+
+#reviews {
+  scroll-margin-top: 120px;
 }
 
 .container {
@@ -3395,10 +3410,6 @@ section {
 
   .md\:w-auto {
     width: auto;
-  }
-
-  .md\:w-40 {
-    width: 10rem;
   }
 
   .md\:grid-cols-4 {

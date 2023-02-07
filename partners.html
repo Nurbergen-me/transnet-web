@@ -21,9 +21,9 @@
             <div class="absolute w-4 h-0.5 rounded-sm bg-primary-white rotate-45"></div>
             <div class="absolute w-4 h-0.5 rounded-sm bg-primary-white -rotate-45"></div>
         </div>
-        <ul class="flex flex-col gap-5 text-2xl mb-10">
+        <ul class="flex flex-col gap-5 text-2xl mb-10" onclick="toggleMenu('close')">
             <li>
-                <a href="index.html#company" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                <a href="index.html#why-us" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                     КОМПАНИЯ
                 </a>
             </li>
@@ -73,12 +73,12 @@
     <div class="bg-secondary-navbar fixed top-0 w-full z-20 backdrop-blur">
         <div class="container">
             <div class="flex items-center justify-between py-6">
-                <a href="index.html" class="cursor-pointer">
-                    <img src="dist/img/logo.svg" class="w-32 md:w-40 lg:w-56" alt="logo">
+                <a href="index.html#home" class="cursor-pointer">
+                    <img src="dist/img/logo.svg" class="w-44 lg:w-56" alt="logo">
                 </a>
                 <ul class="items-center gap-5 lg:gap-10 mx-auto lg:ml-16 lg:mr-auto text-sm lg:text-base hidden md:flex">
                     <li>
-                        <a href="index.html#company" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
+                        <a href="index.html#why-us" class="text-primary-white hover:text-primary-blue font-semibold tracking-wider">
                             КОМПАНИЯ
                         </a>
                     </li>
@@ -111,7 +111,7 @@
             </div>
         </div>
     </div>
-    <header class="relative pt-24 pb-14 md:pb-0 h-auto md:h-[755px] ">
+    <header class="relative pt-24 pb-14 md:pb-0 h-auto md:h-[755px]">
         <img src="dist/img/bg-main.png" class="absolute top-0 w-full h-full object-cover -z-10" alt="bg">
         <div class="container mx-auto">
             <h1 class="mt-14 md:mt-28 mb-16 text-3xl md:text-4xl lg:text-6xl xl:text-7xl text-center text-primary-white font-semibold leading-tight">
@@ -165,6 +165,10 @@
                         <td>ООО ГК «ТехноТрейд НН»</td>
                     </tr>
                     <tr>
+                        <td>Первоуральск</td>
+                        <td>ООО «ЭрКас»</td>
+                    </tr>
+                    <tr>
                         <td>Пермь</td>
                         <td>ООО «ЭРА-ГЛОНАСС»</td>
                     </tr>
@@ -216,19 +220,19 @@
                         Навигация
                     </h4>
                     <div class="grid grid-cols-2 mb-10 max-w-[200px] gap-1.5">
-                        <a class="text-primary-white w-24" href="#">
+                        <a class="text-primary-white w-24" href="index.html#news">
                             Новости
                         </a>
-                        <a class="text-primary-white w-24" href="#">
+                        <a class="text-primary-white w-24" href="index.html#why-us">
                             Компания
                         </a>
-                        <a class="text-primary-white w-24" href="#">
+                        <a class="text-primary-white w-24" href="index.html#reviews">
                             Отзывы
                         </a>
-                        <a class="text-primary-white w-24" href="#">
+                        <a class="text-primary-white w-24" href="partners.html#partners">
                             Партнёры
                         </a>
-                        <a class="text-primary-white w-24" href="#">
+                        <a class="text-primary-white w-24" href="index.html#contacts">
                             Контакты
                         </a>
                     </div>
@@ -260,48 +264,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru-RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
     <script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
-    <script>
-        function toggleMenu(state) {
-            var element = document.getElementById("hidden-menu");
-
-            if (state === 'close') {
-                element.classList.remove("active");
-            } else {
-                element.classList.toggle("active");
-            }
-        }
-
-        ymaps.ready(init);
-
-        function init () {
-            var myMap = new ymaps.Map('map', {
-                    center: [53.836223, 60.626646],
-                    zoom: 4,
-                }, {
-                    searchControlProvider: 'yandex#search'
-                }),
-                objectManager = new ymaps.ObjectManager({
-                    clusterize: false,
-                    gridSize: 32,
-                    clusterDisableClickZoom: true
-                });
-
-            objectManager.objects.options.set({
-                iconLayout: 'default#image',
-                iconImageHref: 'dist/img/placemark.svg',
-                iconImageSize: [32, 32],
-                iconImageOffset: [-5, -38]
-            });
-            objectManager.clusters.options.set('preset', 'islands#greenClusterIcons');
-            myMap.geoObjects.add(objectManager);
-
-            $.ajax({
-                url: "data.json"
-            }).done(function(data) {
-                objectManager.add(data);
-            });
-
-        }
-    </script>
+    <script src="dist/js/map.js"></script>
 </body>
 </html>
