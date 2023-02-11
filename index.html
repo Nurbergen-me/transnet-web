@@ -115,7 +115,7 @@
         <img src="dist/img/bg-main.png" class="absolute top-0 w-full h-full object-cover -z-10" alt="bg">
         <div class="container mx-auto">
             <h1 class="mt-14 md:mt-28 mb-16 text-3xl md:text-4xl lg:text-6xl xl:text-7xl text-center text-primary-white font-semibold leading-tight">
-                СИСТЕМА ПОДСЧЕТА ПАССАЖИРОВ И КОНТРОЛЯ ПАССАЖИРСКИХ ПЕРЕВОЗОК
+                СИСТЕМА ПОДСЧЕТА ПАССАЖИРОВ <span class="whitespace-nowrap">И КОНТРОЛЯ</span> ПАССАЖИРСКИХ ПЕРЕВОЗОК
             </h1>
             <div class="flex flex-col-reverse gap-10 md:gap-0 md:flex-row items-center justify-between">
                 <div class="pl-4 xl:ml-[12%] text-base md:text-xl border-l-4 border-secondary-blue text-secondary-gray">
@@ -190,7 +190,8 @@
             <div class="flex items-end gap-14 xl:w-[80%] mx-auto">
                 <div class="max-w-2xl">
                     <h2 class="mb-7">
-                        Транспортное предприятие теряет от <span class="whitespace-nowrap">1 000 000</span> до <span class="whitespace-nowrap">3 000 000</span> в месяц. Деньги оседают 
+                        
+                        Транспортное предприятие теряет от <span class="whitespace-nowrap">1 000 000</span> до <span class="whitespace-nowrap">3 000 000</span> рублей в месяц. Деньги оседают 
                         в карманах водителей.
                     </h2>
                     <p class="mb-0">
@@ -302,7 +303,8 @@
                 </h2>
                 <div class="flex flex-col gap-4">
                     <div>
-                        Система контролирует соблюдение расписания прибытия автобусов на остановку. В случае отклонения отправляет уведомление диспетчеру и водителю.
+                        Система контролирует соблюдение расписания движения автобусов по маршруту.
+                         В случае отклонения отправляет уведомление диспетчеру и водителю.
                     </div>
                     <div>
                         Данные статистики пассажиропотока помогают выявить часы-пик и оптимально спланировать расписание рейсов.
@@ -395,44 +397,53 @@
     </section>
     <section class="py-9">
         <div class="container">
-            <h2 class="mb-4">
-                СОСТАВ КОМПЛЕКТА ОБОРУДОВАНИЯ
+            <h2 class="mb-10 text-center">
+                СОСТАВ СТАТИСТИК
             </h2>
-            <p class="mb-7">
-                Система в среднем окупается за три-пять месяцев!
-            </p>
         </div>
-        <div class="grid gap-px grid-cols-2 md:grid-cols-4 mb-14 text-sm lg:text-base">
-            <div class="bg-primary-white text-center">
-                <div class="grid place-content-center rounded bg-secondary-producttitle mt-5 mx-6 min-h-[56px] px-1">
-                    Видеокамеры подсчета <br> пассажиров
-                </div>
-                <div class="h-[280px] flex items-center">
-                    <img class="mx-auto" src="dist/img/product-1.png" alt="product">
+        <div class="px-5  xl:flex">
+            <div class="xl:w-[65%]">
+                <h3 class="mb-5 text-center text-xl lg:text-3xl font-medium">
+                    Комплект оборудования
+                </h3>
+                <div class="grid gap-px grid-cols-1 md:grid-cols-3 mb-14 text-sm lg:text-base xl:h-[300px] overflow-hidden">
+                    <div class="bg-primary-white text-center">
+                        <div class="grid place-content-center rounded bg-secondary-producttitle mt-5 mx-6 min-h-[56px] px-1">
+                            Видеокамеры подсчета <br> пассажиров
+                        </div>
+                        <div class="h-[220px] flex items-center">
+                            <img class="mx-auto max-w-[70%] max-h-[70%]" src="dist/img/product-1.png" alt="product">
+                        </div>
+                    </div>
+                    <div class="bg-primary-white text-center">
+                        <div class="grid place-content-center rounded bg-secondary-producttitle mt-5 mx-6 min-h-[56px] px-1">
+                            Бортовой компьютер
+                        </div>
+                        <div class="h-[220px] flex items-center">
+                            <img class="mx-auto max-w-[70%] max-h-[70%]" src="dist/img/product-2.png" alt="product">
+                        </div>
+                    </div>
+                    <div class="bg-primary-white text-center">
+                        <div class="grid place-content-center rounded bg-secondary-producttitle mt-5 mx-6 min-h-[56px] px-1">
+                            Абонентский телематический <br> терминал ГЛОНАСС/GPS
+                        </div>
+                        <div class="h-[220px] flex items-center">
+                            <img class="mx-auto max-w-[70%] max-h-[70%]" src="dist/img/product-3.png" alt="product">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="bg-primary-white text-center">
-                <div class="grid place-content-center rounded bg-secondary-producttitle mt-5 mx-6 min-h-[56px] px-1">
-                    Бортовой компьютер
-                </div>
-                <div class="h-[280px] flex items-center">
-                    <img class="mx-auto" src="dist/img/product-2.png" alt="product">
-                </div>
-            </div>
-            <div class="bg-primary-white text-center">
-                <div class="grid place-content-center rounded bg-secondary-producttitle mt-5 mx-6 min-h-[56px] px-1">
-                    Абонентский телематический <br> терминал ГЛОНАСС/GPS
-                </div>
-                <div class="h-[280px] flex items-center">
-                    <img class="mx-auto" src="dist/img/product-3.png" alt="product">
-                </div>
-            </div>
-            <div class="bg-primary-white text-center">
-                <div class="grid place-content-center rounded bg-secondary-producttitle mt-5 mx-6 min-h-[56px] px-1">
-                    4-G модем
-                </div>
-                <div class="h-[280px] flex items-center">
-                    <img class="mx-auto" src="dist/img/product-4.png" alt="product">
+            <div class="xl:w-[35%] lg:ml-[1px] mb-10 xl:mb-0">
+                <h3 class="mb-5 text-center text-xl lg:text-3xl whitespace-nowrap font-medium">
+                    Программное обеспечение
+                </h3>
+                <div class="bg-primary-white text-center pt-5 h-[300px]">
+                    <div class="grid place-content-center rounded bg-secondary-producttitle mx-6 min-h-[56px] px-1">
+                        Пилот.Автокондуктор
+                    </div>
+                    <div class="h-[220px] flex items-center">
+                        <img class="mx-auto max-w-[70%] max-h-[70%]" src="dist/img/product-5.png" alt="product">
+                    </div>
                 </div>
             </div>
         </div>
@@ -457,7 +468,7 @@
                             </h3>
                         </div>
                         <p>
-                            Группа компаний TransNetIQ работает на ИТ-рынке с 2014 года. Уже реализовано 140 успешных проектов.
+                            Группа компаний TransNetIQ работает на ИТ-рынке более 14 лет. Уже реализовано 140 успешных проектов.
                         </p>
                     </div>
                     <div class="pt-7 pb-10 border-b border-secondary-burgerbg">
@@ -470,7 +481,7 @@
                             </h3>
                         </div>
                         <p>
-                            Ключевые сотрудники имеют опыт работы в ведущих ИТ-компаниях России и научно-исследовательских организациях транспортной и ракетно-космической отрасли.
+                            Ключевые сотрудники имеют многолетний опыт работы в ведущих ИТ-компаниях России и научно-исследовательских организациях.
                         </p>
                     </div>
                 </div>
@@ -484,12 +495,11 @@
                                 03 <span class="text-4xl">/</span>
                             </div>
                             <h3>
-                                НАМ ДОВЕРЯЕТ ГОСУДАРСТВО И БИЗНЕС
+                                ЛУЧШАЯ ИТ-КОМПАНИЯ ПОДМОСКОВЬЯ
                             </h3>
                         </div>
                         <p>
-                            Наши клиенты: Минтранс России, Госкорпорация «Роскосмос», Почта России, АО «ГЛОНАСС»,
-                            АО «ЦНИИмаш», Газпром, Роснефть, Евроцемент.
+                            В 2020 году компания TransNetIQ заняла первое место среди ИТ-компаний в Московской области на форуме «Малый и средний бизнес Подмосковья».
                         </p>
                     </div>
                     <div class="pt-7 pb-10 border-b border-secondary-burgerbg">
@@ -498,11 +508,11 @@
                                 04 <span class="text-4xl">/</span>
                             </div>
                             <h3>
-                                ЛИДЕРЫ В ЦИФРОВИЗАЦИИ ТРАНСПОРТА
+                                НАМ ДОВЕРЯЮТ ГОСУДАРСТВО И БИЗНЕС ПО ВСЕЙ РОССИИ
                             </h3>
                         </div>
                         <p>
-                            В 2016 году создана отдельная компания «Транснетика-Сервис», которая занимается развитием направления цифровых решений для транспорта.
+                            Наши клиенты: OOO «Терек-ЛТД» г. Переславль-Залесский, ОАО «Добринское АТП» г.Липецк, ООО «Дизель» г. Пермь, МУП «ДСУ» г. Тарко-Сале, МУП «СТУ» г. Стерлитамак и др.
                         </p>
                     </div>
                 </div>
@@ -792,9 +802,6 @@
                         </a>
                         <a class="text-primary-white w-24" href="partners.html#partners">
                             Партнёры
-                        </a>
-                        <a class="text-primary-white w-24" href="index.html#contacts">
-                            Контакты
                         </a>
                     </div>
                 </div>

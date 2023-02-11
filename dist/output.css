@@ -872,6 +872,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.ml-\[1px\] {
+  margin-left: 1px;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -1036,6 +1040,23 @@ video {
   height: 1.5rem;
 }
 
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.h-\[220px\] {
+  height: 220px;
+}
+
+.h-\[312px\] {
+  height: 312px;
+}
+
+.max-h-\[70\%\] {
+  max-height: 70%;
+}
+
 .min-h-\[320px\] {
   min-height: 320px;
 }
@@ -1088,6 +1109,10 @@ video {
   width: 5rem;
 }
 
+.w-2 {
+  width: 0.5rem;
+}
+
 .w-4\/5 {
   width: 80%;
 }
@@ -1104,16 +1129,16 @@ video {
   width: 6rem;
 }
 
-.w-0\.5 {
-  width: 0.125rem;
+.w-\[60\%\] {
+  width: 60%;
 }
 
-.w-0 {
-  width: 0px;
+.w-\[65\%\] {
+  width: 65%;
 }
 
-.w-2 {
-  width: 0.5rem;
+.w-\[35\%\] {
+  width: 35%;
 }
 
 .min-w-\[330px\] {
@@ -1150,6 +1175,10 @@ video {
 
 .max-w-\[200px\] {
   max-width: 200px;
+}
+
+.max-w-\[70\%\] {
+  max-width: 70%;
 }
 
 .flex-shrink {
@@ -2354,6 +2383,11 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .pt-24 {
   padding-top: 6rem;
 }
@@ -2420,6 +2454,10 @@ video {
 
 .pb-11 {
   padding-bottom: 2.75rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .text-left {
@@ -2517,12 +2555,21 @@ video {
   font-size: 28px;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-semibold {
   font-weight: 600;
 }
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .uppercase {
@@ -3420,6 +3467,10 @@ section {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -3531,6 +3582,14 @@ section {
     margin-left: 5rem;
   }
 
+  .lg\:ml-\[1px\] {
+    margin-left: 1px;
+  }
+
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -3571,6 +3630,10 @@ section {
     gap: 6rem;
   }
 
+  .lg\:overflow-hidden {
+    overflow: hidden;
+  }
+
   .lg\:pl-\[85px\] {
     padding-left: 85px;
   }
@@ -3592,6 +3655,11 @@ section {
     font-size: 3.75rem;
     line-height: 1;
   }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -3607,8 +3675,28 @@ section {
     margin-left: 12%;
   }
 
+  .xl\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .xl\:flex {
+    display: flex;
+  }
+
+  .xl\:h-\[300px\] {
+    height: 300px;
+  }
+
   .xl\:w-\[80\%\] {
     width: 80%;
+  }
+
+  .xl\:w-\[65\%\] {
+    width: 65%;
+  }
+
+  .xl\:w-\[35\%\] {
+    width: 35%;
   }
 
   .xl\:text-7xl {
