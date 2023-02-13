@@ -844,16 +844,16 @@ video {
   margin-bottom: 3rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
 .mb-14 {
   margin-bottom: 3.5rem;
 }
 
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .-mt-20 {
@@ -870,10 +870,6 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.ml-\[1px\] {
-  margin-left: 1px;
 }
 
 .box-border {
@@ -1016,16 +1012,16 @@ video {
   height: 5rem;
 }
 
-.h-\[280px\] {
-  height: 280px;
-}
-
-.h-\[370px\] {
-  height: 370px;
+.h-\[220px\] {
+  height: 220px;
 }
 
 .h-\[300px\] {
   height: 300px;
+}
+
+.h-\[370px\] {
+  height: 370px;
 }
 
 .h-60 {
@@ -1040,19 +1036,6 @@ video {
   height: 1.5rem;
 }
 
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.h-\[220px\] {
-  height: 220px;
-}
-
-.h-\[312px\] {
-  height: 312px;
-}
-
 .max-h-\[70\%\] {
   max-height: 70%;
 }
@@ -1063,6 +1046,10 @@ video {
 
 .min-h-\[56px\] {
   min-height: 56px;
+}
+
+.min-h-\[200px\] {
+  min-height: 200px;
 }
 
 .w-11 {
@@ -1129,12 +1116,8 @@ video {
   width: 6rem;
 }
 
-.w-\[60\%\] {
-  width: 60%;
-}
-
-.w-\[65\%\] {
-  width: 65%;
+.w-\[36\%\] {
+  width: 36%;
 }
 
 .w-\[35\%\] {
@@ -1161,6 +1144,10 @@ video {
   max-width: 800px;
 }
 
+.max-w-\[70\%\] {
+  max-width: 70%;
+}
+
 .max-w-\[470px\] {
   max-width: 470px;
 }
@@ -1175,10 +1162,6 @@ video {
 
 .max-w-\[200px\] {
   max-width: 200px;
-}
-
-.max-w-\[70\%\] {
-  max-width: 70%;
 }
 
 .flex-shrink {
@@ -2368,6 +2351,11 @@ video {
   padding-right: 1rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -2381,11 +2369,6 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
 .pt-24 {
@@ -2418,6 +2401,10 @@ video {
 
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .pt-7 {
@@ -2456,8 +2443,12 @@ video {
   padding-bottom: 2.75rem;
 }
 
-.pt-5 {
-  padding-top: 1.25rem;
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
+.pl-6 {
+  padding-left: 1.5rem;
 }
 
 .text-left {
@@ -2546,6 +2537,11 @@ video {
   line-height: 1rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .\!text-5xl {
   font-size: 3rem !important;
   line-height: 1 !important;
@@ -2555,21 +2551,16 @@ video {
   font-size: 28px;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .font-semibold {
   font-weight: 600;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
 .font-medium {
   font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .uppercase {
@@ -3109,6 +3100,7 @@ section {
   position: absolute;
   width: 60px;
   height: 60px;
+  max-height: 100%;
   border-radius: 30px;
   z-index: -1;
   top: 0px;
@@ -3302,7 +3294,7 @@ section {
   }
 
   .main-btn {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .hidden-menu {
@@ -3405,6 +3397,15 @@ section {
     min-width: 380px;
   }
 
+  .sm\:pl-7 {
+    padding-left: 1.75rem;
+  }
+
+  .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
   }
@@ -3463,12 +3464,12 @@ section {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -3550,6 +3551,10 @@ section {
 }
 
 @media (min-width: 1024px) {
+  .lg\:absolute {
+    position: absolute;
+  }
+
   .lg\:relative {
     position: relative;
   }
@@ -3586,12 +3591,12 @@ section {
     margin-left: 1px;
   }
 
-  .lg\:mb-0 {
-    margin-bottom: 0px;
-  }
-
   .lg\:block {
     display: block;
+  }
+
+  .lg\:flex {
+    display: flex;
   }
 
   .lg\:h-\[420px\] {
@@ -3614,6 +3619,10 @@ section {
     width: auto;
   }
 
+  .lg\:w-\[36\%\] {
+    width: 36%;
+  }
+
   .lg\:min-w-\[370px\] {
     min-width: 370px;
   }
@@ -3628,10 +3637,6 @@ section {
 
   .lg\:gap-24 {
     gap: 6rem;
-  }
-
-  .lg\:overflow-hidden {
-    overflow: hidden;
   }
 
   .lg\:pl-\[85px\] {
